@@ -1,40 +1,40 @@
-name: Report an existing resource
-description: Report a broken link, a resource that is no longer free, or an inaccurate listing.
-title: "[Maintenance] "
+name: 报告已有资源的问题
+description: 报告失效链接、不再免费的资源或不准确的条目说明。
+title: "[维护] "
 labels: []
 body:
   - type: markdown
     attributes:
       value: |
-        New resource submissions are paused. Use this form only to report a problem with a resource that is already listed.
+        原资源目录暂停接收新增投稿。此表单仅用于报告已经收录的资源存在的问题。
 
   - type: dropdown
     id: problem
     attributes:
-      label: Problem
-      description: What needs maintenance?
+      label: 问题类型
+      description: 哪项内容需要维护？
       options:
-        - Broken or redirected link
-        - Resource is no longer free
-        - Inaccurate description
-        - Resource should be removed
+        - 链接失效或发生重定向
+        - 资源不再免费
+        - 说明不准确
+        - 应移除此资源
     validations:
       required: true
 
   - type: input
     id: resource
     attributes:
-      label: Resource name
-      description: Enter the name exactly as it appears in the README.
-      placeholder: Resource name
+      label: 资源名称
+      description: 请填写与README中完全一致的资源名称。
+      placeholder: 资源名称
     validations:
       required: true
 
   - type: input
     id: link
     attributes:
-      label: Current README link
-      description: Paste the current link from the resource entry.
+      label: README中的当前链接
+      description: 请粘贴资源条目目前使用的链接。
       placeholder: https://example.com/
     validations:
       required: true
@@ -42,15 +42,15 @@ body:
   - type: textarea
     id: details
     attributes:
-      label: Details
-      description: Explain the problem and include supporting links or other evidence when available.
+      label: 详细说明
+      description: 请解释问题，并尽量提供支持这一判断的链接或其他证据。
     validations:
       required: true
 
   - type: checkboxes
     id: confirmation
     attributes:
-      label: Confirmation
+      label: 确认
       options:
-        - label: I am reporting an existing resource, not suggesting a new one.
+        - label: 我正在报告已有资源的问题，没有推荐新资源。
           required: true

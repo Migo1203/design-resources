@@ -1,25 +1,24 @@
 <!--
-New resource submissions are currently paused. Pull requests that add a new
-resource will not be accepted. This template is for approved maintenance work
-by repository maintainers and collaborators.
+原资源目录目前暂停接收新增投稿，不接受添加新资源的拉取请求。
+本模板适用于仓库维护者与协作者已获授权的资源维护工作。
 -->
 
-## Maintenance change
+## 维护内容
 
-Resource name:
+资源名称：
 
-Section:
+所属分类：
 
-Current link: https://
+当前链接：https://
 
-Change type: Broken link / No longer free / Inaccurate description / Removal
+修改类型：链接失效／不再免费／说明不准确／移除
 
-## Explanation
+## 原因说明
 
-<!-- Explain the problem and why this change resolves it. -->
+<!-- 请解释问题，以及本次修改如何解决问题。 -->
 
-## Checklist
+## 检查清单
 
-- [ ] I am correcting or removing only existing resources.
-- [ ] I included evidence for the maintenance change.
-- [ ] I did not modify the repository banner or Warp sponsor section.
+- [ ] 我仅修正或移除已有资源。
+- [ ] 我已提供支持本次维护修改的证据。
+- [ ] 我没有修改仓库横幅或Warp赞助区域。

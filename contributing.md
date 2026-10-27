@@ -1,40 +1,37 @@
-# Contributing Guidelines
+# 贡献指南
 
-New resource submissions are currently paused. Pull requests opened before October 18, 2026 will still be reviewed under the rules that were in place when they were submitted, but new resource additions are not being accepted.
+以下保留原资源目录的外部投稿规则。维护者在本仓库建设中文导览、审美参考包和商业提案流程时，按本仓库的明确任务范围推进；这些个人工作资料不作为上游新增资源投稿。
 
-## Report an existing resource
+目前暂停接收新增资源。2026年10月18日之前已创建的拉取请求，仍按提交时的规则审查；不再接受新的资源添加。
 
-Please open an issue only to report one of these maintenance problems:
+## 报告已有资源的问题
 
-- A broken or redirected link
-- A resource that is no longer free under the repository rules
-- An inaccurate description
-- An existing resource that should be removed
+请仅针对以下维护问题创建议题：
 
-Include the resource name, its current link in the README, and a clear explanation of the problem. Do not open an issue to suggest a new resource.
+- 链接失效或发生重定向。
+- 资源不再符合仓库的免费使用规则。
+- 资源说明不准确。
+- 应当移除某个已有资源。
 
-## Existing open pull requests
+请写明资源名称、README中的当前链接，并清楚说明问题。不要通过议题推荐新资源。
 
-Pull requests that were already open before the pause must continue to follow these rules:
+## 暂停前已创建的拉取请求
 
-- Add or correct one resource per pull request so it is easy to review.
+暂停前已经创建的拉取请求，仍须遵守以下规则：
 
-- Use the resource name and section in the pull request title.
-  - Example: `[Tailwind CSS] -> [CSS Frameworks]`
+- 每个拉取请求只添加或修正一个资源，便于审查。
+- 标题采用“资源名称 → 所属分类”的格式，例如：`[Tailwind CSS] -> [CSS 框架]`。分类名须与本仓库当前README一致；向上游提交时使用上游分类名。
+- 在描述中包含资源的直接链接，例如：`Link: https://tailwindcss.com/`。`Link:`是现有校验脚本识别的字段，请保留英文前缀。
+- 确认链接指向的具体资源能够长期免费提供有用功能。
+  - 存在定价页面或独立付费功能，不会自动导致资源不合格。
+  - 只描述无需付费即可使用的功能。
+  - 不接收纯付费产品、限时试用、会过期的额度、按日或按月重置的配额、存储配额、带水印的输出，以及关键导出功能收费的资源。
+  - 如果链接功能可以持续免费使用，则允许每次操作可重复使用的限制，例如单文件大小或每次处理页数。
+- 提交前按资源名称和URL搜索README，不接收重复资源。
+- 仅修改对应资源条目，不修改仓库横幅或Warp赞助区域。
 
-- Include the direct resource URL in the pull request description.
-  - Example: `Link: https://tailwindcss.com/`
+原有自动校验还识别特定的英文确认语句与产品归属字段；处理暂停前的外部投稿时，需保留原字段格式，不能将中文翻译直接当作脚本规则已更新。本次不改变校验代码。
 
-- Confirm that the exact linked resource provides useful functionality indefinitely for free.
-  - A pricing page or separate paid features do not automatically disqualify a resource.
-  - Describe only functionality that is available without payment.
-  - Paid-only products, time-limited trials, expiring credits, recurring daily or monthly quotas, storage quotas, watermarked output, and essential paid exports are not accepted.
-  - Repeatable per-use limits, such as file-size limits or pages processed per run, are allowed when the linked functionality can continue to be used without payment.
+## 维护者修改
 
-- Search the README by resource name and URL before submitting. Duplicates are not accepted.
-
-- Change only the resource entry. Do not modify the repository banner or Warp sponsor section.
-
-## Maintainer changes
-
-Maintainers and collaborators may submit pull requests for approved maintenance work. Keep each change focused on correcting or removing existing resources, and do not modify the repository banner or Warp sponsor section.
+维护者与协作者可以提交已获授权的维护工作。维护原资源目录时，让每次修改聚焦于修正或移除已有资源，并保留仓库横幅与Warp赞助区域。
