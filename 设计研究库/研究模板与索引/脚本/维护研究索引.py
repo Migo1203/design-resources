@@ -23,9 +23,12 @@ CATEGORIES = {
     '06_电商设计案例': '电商案例',
 }
 STATUSES = ['待研究', '研究中', '待补充', '已完成', '已应用验证', '已搁置']
+AUTHOR_SUBTYPES = {'品牌案例', '角色与IP案例', '平面视觉案例', '设计方法专题'}
+COMPAT_MARKER = '<!-- 文档用途：兼容导航，不计为研究 -->'
 INDEX_TYPES = {'设计师索引.md': '设计师档案', '品牌案例索引.md': '品牌案例',
                'IP案例索引.md': '角色与IP案例', '网站案例索引.md': '网站案例',
-               '视觉案例索引.md': '平面视觉案例', '电商案例索引.md': '电商案例'}
+               '视觉案例索引.md': '平面视觉案例', '电商案例索引.md': '电商案例',
+               '角色IP案例索引.md': '角色与IP案例', '设计方法总索引.md': '设计方法专题'}
 REQUIRED = {'标题', '研究类型', '研究状态', '创建日期', '更新日期', '标签', '关联项目'}
 
 # 拒绝重复键，避免 YAML 看起来一个状态、程序实际读到另一个状态。
@@ -84,8 +87,14 @@ def read_research(vocabulary):
         for path in sorted((BASE / folder).rglob('*.md')):
             if path.name == 'README.md':
                 continue
+            if (folder == '01_设计师档案' and path.parent == BASE/folder
+                    and path.read_text().startswith(COMPAT_MARKER)):
+                continue
             data, body = metadata(path, vocabulary)
-            if data['研究类型'] != typ:
+            author_subdocument = (folder == '01_设计师档案'
+                                  and len(path.relative_to(BASE/folder).parts) >= 2
+                                  and data['研究类型'] in AUTHOR_SUBTYPES)
+            if data['研究类型'] != typ and not author_subdocument:
                 raise ValueError(f'{path.name}：目录与研究类型不一致')
             if data['标题'] in titles:
                 raise ValueError('重复研究标题：'+data['标题'])
@@ -113,12 +122,15 @@ def read_research(vocabulary):
                     dt.date.fromisoformat(cols[2])
                     if not re.match(r'^[ABC]类', cols[3]):
                         raise ValueError(f'{path.name}：来源可信度须A类、B类或C类')
-                if typ == '设计师档案':
+                if data['研究类型'] == '设计师档案':
+                    source_urls = set(re.findall(r'^\| [A-Z][A-Z0-9]*\d+ \| \[[^]]+\]\((https?://[^)]+)\)', body, re.M))
+                    if len(source_urls) < 2:
+                        raise ValueError(f'{path.name}：设计师须至少两个可靠来源，来源品质另做内容核验')
                     for n, name in enumerate(['基本信息','设计理念','代表作品','设计特点','值得学习的地方','资料来源'],1):
                         if f'## {n:02d} {name}' not in body:
                             raise ValueError(f'{path.name}：缺设计师六维章节{name}')
-                    if len(re.findall(r'^### [A-Z]\. ', body, re.M)) < 2 or '深入拆解' not in body:
-                        raise ValueError(f'{path.name}：须两个作品且一个深入拆解')
+                    if len(re.findall(r'^### [A-Z]\. ', body, re.M)) < 3 or '深入拆解' not in body:
+                        raise ValueError(f'{path.name}：须三个作品且一个深入拆解')
             if data['研究状态'] in ['已完成', '已应用验证'] and '## 完成检查记录' not in body:
                 raise ValueError(f'{path.name}：完成状态须有完成检查记录，脚本不代替事实检查')
             if data['研究状态'] == '已应用验证' and '## 实际应用证据' not in body:
