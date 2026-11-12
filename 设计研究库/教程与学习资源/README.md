@@ -18,8 +18,13 @@
 
 ## 检索与下一步
 
-[查看相关索引](../08_研究模板与索引/研究总索引.md) · [研究模板与规则](../08_研究模板与索引/README.md)
+[查看相关索引](../研究模板与索引/研究总索引.md) · [研究模板与规则](../研究模板与索引/README.md)
 
 当前没有独立研究卡。先检查人物档案中的相关作品，再决定是否拆出独立案例；不得为填满分类生成无证据文章。
 
 [返回研究库](../README.md)
+
+## 原项目学习资料导读
+
+- [AIGC：教程与资源.md](https://github.com/Migo1203/AIGC/blob/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/01_%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E9%A1%B9%E7%9B%AE/02_%E7%A0%94%E7%A9%B6%E5%8F%82%E8%80%83/%E6%95%99%E7%A8%8B%E4%B8%8E%E8%B5%84%E6%BA%90.md)：官方教程入口，暂未逐项评估课程，不复制成已学习结果。
+- [migo-portfolio：README.md](https://github.com/Migo1203/migo-portfolio/blob/c1b787c4100443761ed63cb142f9df75f480970b/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/README.md)：网站搭建、H5、审阅稿和Figma学习问答，非网站案例；保留导读链接。

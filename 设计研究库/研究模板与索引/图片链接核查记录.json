@@ -1,0 +1,571 @@
+{
+  "检查日期": "2026-11-12",
+  "检查时间UTC": "2026-11-12T10:18:45.068379+00:00",
+  "检查方式": "读取HTTP响应头和前64字节；网页预览与三张肖像另已实际打开图像。未声称逐张重做历史案例视觉分析。",
+  "范围限制": "只证明此次可读取，不保证未来不变、GitHub图片代理永远成功或素材得到商业授权。",
+  "独立图片URL数量": 62,
+  "通过数量": 62,
+  "记录": [
+    {
+      "图片URL": "https://www.designcommittee.jp/asset_2021/img/member/hara_kenya/portrait.jpg",
+      "引用文档": [
+        "01_设计师档案/原研哉.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://www.designcommittee.jp/asset_2021/img/member/hara_kenya/1.jpg",
+      "引用文档": [
+        "01_设计师档案/原研哉.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://d3ec1vt3scx7rr.cloudfront.net/files/styles/ui_large/public/images/luce/artists/rand_paul.jpg?itok=OBG9T0Lu",
+      "引用文档": [
+        "01_设计师档案/保罗·兰德.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://www.ibm.com/design/language/a41bb6fc86bf12f915d28f4c34f33d74/8bar.svg",
+      "引用文档": [
+        "01_设计师档案/保罗·兰德.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/svg+xml",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://a-g-i.s3.eu-west-3.amazonaws.com/paulrand/_1600xAUTO_crop_center-center_75_none/Rand_02.jpg",
+      "引用文档": [
+        "01_设计师档案/保罗·兰德.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://pentagram-production.imgix.net/998719ce-af62-45a9-ae86-a1708f45dc13/MB_Partner_Portrait.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C1500%2C1500&w=400&h=400&fit=crop&s=54ec2d26f87f0f339080f2858fd78175",
+      "引用文档": [
+        "01_设计师档案/迈克尔·比鲁特.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://pentagram-production.imgix.net/f8380a94-0557-49a5-b897-60f49ac77b68/mb_mitmedialab_03.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=%2C%2C%2C&w=640&crop=1&fit=crop&h=400&s=6c2a041eddbef794b95953ee496693b9",
+      "引用文档": [
+        "01_设计师档案/迈克尔·比鲁特.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://pentagram-production.imgix.net/bdf16d86-bfc9-4554-b56f-6932d1e6c889/mb_saksfifthavenue_06.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C295%2C2000%2C1250&w=880&fit=crop&h=548&s=865866cda49c105ff4d7ce1db315a3bd",
+      "引用文档": [
+        "01_设计师档案/迈克尔·比鲁特.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/GitHub/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/02_Mona%E8%A7%92%E8%89%B2%E5%A4%9A%E8%A7%86%E8%A7%92.png",
+      "引用文档": [
+        "02_品牌设计案例/GitHub-角色标识与品牌分工.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/GitHub/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/04_Mona%E9%85%8D%E8%89%B2%E5%8F%98%E4%BD%93.png",
+      "引用文档": [
+        "02_品牌设计案例/GitHub-角色标识与品牌分工.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/GitHub/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/01_Invertocat%E4%B8%8E%E7%95%99%E7%99%BD.png",
+      "引用文档": [
+        "02_品牌设计案例/GitHub-角色标识与品牌分工.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://nedcollections.co.nz/cdn/shop/files/195A7159.jpg?v=1740099565&width=1200",
+      "引用文档": [
+        "02_品牌设计案例/NED-官网调性与电商转译.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://nedcollections.co.nz/cdn/shop/files/3_3bbf8bff-df5f-4534-a540-49240413a2d0.png?v=1740099565&width=1200",
+      "引用文档": [
+        "02_品牌设计案例/NED-官网调性与电商转译.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Mailchimp/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/01_%E6%B5%85%E5%BA%95%E7%BB%84%E5%90%88%E6%A0%87%E8%AF%86.png",
+      "引用文档": [
+        "02_品牌设计案例/Mailchimp-角色职责与品牌视觉.md",
+        "设计方法专题/角色品牌-六案例横向比较.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Mailchimp/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/02_%E6%B7%B1%E5%BA%95%E7%BB%84%E5%90%88%E6%A0%87%E8%AF%86.png",
+      "引用文档": [
+        "02_品牌设计案例/Mailchimp-角色职责与品牌视觉.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Mailchimp/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/03_%E6%B7%B1%E5%BA%95%E6%AD%A3%E8%AF%AF%E5%AF%B9%E7%85%A7.png",
+      "引用文档": [
+        "02_品牌设计案例/Mailchimp-角色职责与品牌视觉.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Apis%20Orient/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/01_%E5%85%AC%E5%BC%80%E9%A1%B9%E7%9B%AE%E5%B0%81%E9%9D%A2.png",
+      "引用文档": [
+        "02_品牌设计案例/Apis-Orient-封面与符号关系.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BB%BB%E5%8A%A1/%E5%95%86%E4%B8%9A%E8%A7%86%E8%A7%89%E6%8F%90%E6%A1%88%E9%AA%8C%E8%AF%81/%E7%BE%8E%E6%9C%AF%E8%AF%AD%E8%A8%80%E4%B8%8E%E6%9E%84%E5%9B%BE%E8%8D%89%E6%A1%88.svg",
+      "引用文档": [
+        "05_平面与视觉设计案例/音频产品摄影-三组美术参照.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/svg+xml",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://pro.lexon-design.com/media/wysiwyg/PDP-600x600px-Mino_-01.jpg",
+      "引用文档": [
+        "05_平面与视觉设计案例/音频产品摄影-三组美术参照.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://sony.scene7.com/is/image/sonyglobalsolutions/d-feature-image-03?$largeImage$",
+      "引用文档": [
+        "05_平面与视觉设计案例/音频产品摄影-三组美术参照.md",
+        "05_平面与视觉设计案例/便携音箱-三品牌产品视觉.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-bluetooth-speaker-mini/pc/pc_image132_hold_in_hand_background_photo.jpg",
+      "引用文档": [
+        "05_平面与视觉设计案例/便携音箱-三品牌产品视觉.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://tribit.com/cdn/shop/files/Micro_3_A_5-5_Phone-1.jpg?v=1773994866&width=1000",
+      "引用文档": [
+        "05_平面与视觉设计案例/便携音箱-三品牌产品视觉.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://www.soundcore.com/cdn/shop/files/A3138011-TD06-V1.png?v=1754531989&width=1400",
+      "引用文档": [
+        "设计方法专题/续航卖点-时间语义四案例.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://w-kingaudio.com/cdn/shop/files/2-x_20s.jpg?v=1768989664&width=1400",
+      "引用文档": [
+        "设计方法专题/续航卖点-时间语义四案例.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://www.victor.jp/content/victor/jp/headphones/lineup/ha-s99n/_jcr_content/root/responsivegrid/container_347305986__462114322/container/hero_teaser.coreimg.jpeg/1762471022981/feature06.jpeg",
+      "引用文档": [
+        "设计方法专题/续航卖点-时间语义四案例.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Mailchimp/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/06_%E5%AE%98%E7%BD%91%E9%A6%96%E9%A1%B5%E5%BA%94%E7%94%A8.png",
+      "引用文档": [
+        "设计方法专题/角色品牌-六案例横向比较.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Slligy/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/01_%E7%B3%BB%E7%BB%9F%E5%85%83%E7%B4%A0%E6%A6%82%E8%A7%88.jpg",
+      "引用文档": [
+        "设计方法专题/角色品牌-六案例横向比较.md",
+        "03_角色与IP设计案例/Slligy-个人品牌与原创角色系统.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/%E6%BD%98%E8%99%8E%E4%B8%8EABCD%E8%AE%A8%E8%AE%BA%E8%A7%86%E9%A2%91/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/04_%E4%B8%A4%E6%A1%88%E7%94%BB%E9%9D%A2%E5%AF%B9%E7%85%A7.jpg",
+      "引用文档": [
+        "设计方法专题/固定与弹性识别-视频分析.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/%E6%BD%98%E8%99%8E%E4%B8%8EABCD%E8%AE%A8%E8%AE%BA%E8%A7%86%E9%A2%91/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/03_%E5%BC%B9%E6%80%A7%E5%AD%97%E4%BD%93%E4%B8%8E%E7%BB%93%E6%9E%84%E7%A7%A9%E5%BA%8F.jpg",
+      "引用文档": [
+        "设计方法专题/固定与弹性识别-视频分析.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/%E5%8F%AF%E8%B0%83%E8%8A%82%E5%93%91%E9%93%83/06_%E8%AE%BE%E8%AE%A1%E4%BC%98%E5%8C%96/%E8%AE%BE%E8%AE%A1%E5%AE%A1%E6%9F%A5/%E7%AC%AC01%E7%89%88/%E5%AE%A1%E6%9F%A5%E5%9B%BE/02_%E5%93%81%E7%89%8C%E5%A2%9E%E5%BC%BA%E9%A1%B5%E9%9D%A2%E4%B8%89%E6%A8%A1%E5%9D%97%E5%AE%A1%E6%9F%A5%E7%B4%A2%E5%BC%95.jpg",
+      "引用文档": [
+        "设计方法专题/产品与竞品研究-证据及宣称核对.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://bruno-simon.com/social/share-image.png?cb=a",
+      "引用文档": [
+        "04_网站与数字体验案例/Bruno-Simon-驾驶式浏览候选.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/migo-portfolio/c1b787c4100443761ed63cb142f9df75f480970b/UI%E8%AE%BE%E8%AE%A1/%E7%A0%94%E7%A9%B6%E8%AE%B0%E5%BD%95/%E5%8F%82%E8%80%83%E6%88%AA%E5%9B%BE/01_Tobias_%E6%A1%8C%E9%9D%A2.png",
+      "引用文档": [
+        "04_网站与数字体验案例/Tobias-HOVS-首屏表达与身份.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/migo-portfolio/c1b787c4100443761ed63cb142f9df75f480970b/UI%E8%AE%BE%E8%AE%A1/%E7%A0%94%E7%A9%B6%E8%AE%B0%E5%BD%95/%E5%8F%82%E8%80%83%E6%88%AA%E5%9B%BE/01_Tobias_%E6%89%8B%E6%9C%BA.png",
+      "引用文档": [
+        "04_网站与数字体验案例/Tobias-HOVS-首屏表达与身份.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://lottanieminen-22019.kxcdn.com/media/pages/index/jeans-towels/d7892acae7-1711536338/jt-thumbnail-x315.jpg",
+      "引用文档": [
+        "04_网站与数字体验案例/Lotta-Nieminen-项目摘要与作品入口.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpg",
+      "可读取": true
+    },
+    {
+      "图片URL": "http://www.malikafavre.com/cdn/shop/files/Red_landscape_3007db23-063f-437b-87db-7b852f1bfcd0.png?v=1737360642",
+      "引用文档": [
+        "04_网站与数字体验案例/Malika-Favre-主题与商业入口.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/migo-portfolio/c1b787c4100443761ed63cb142f9df75f480970b/UI%E8%AE%BE%E8%AE%A1/%E7%A0%94%E7%A9%B6%E8%AE%B0%E5%BD%95/%E5%8F%82%E8%80%83%E6%88%AA%E5%9B%BE/03_Pablo_%E6%A1%8C%E9%9D%A2.png",
+      "引用文档": [
+        "04_网站与数字体验案例/Pablo-Stanley-Open-Peeps案例结构.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/migo-portfolio/c1b787c4100443761ed63cb142f9df75f480970b/UI%E8%AE%BE%E8%AE%A1/%E7%A0%94%E7%A9%B6%E8%AE%B0%E5%BD%95/%E5%8F%82%E8%80%83%E6%88%AA%E5%9B%BE/03_Pablo_%E6%89%8B%E6%9C%BA.png",
+      "引用文档": [
+        "04_网站与数字体验案例/Pablo-Stanley-Open-Peeps案例结构.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://genekogan.com/images/style-transfer/ml_cubist_expressionist_impressionist.jpg",
+      "引用文档": [
+        "04_网站与数字体验案例/Gene-Kogan-混合媒介项目模板.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://jessicahische.is/media/pages/awesome/a117b5d159-1773773132/jhf-15-1200x-q80.jpg",
+      "引用文档": [
+        "04_网站与数字体验案例/Jessica-Hische-分类与合作入口.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/migo-portfolio/c1b787c4100443761ed63cb142f9df75f480970b/UI%E8%AE%BE%E8%AE%A1/%E7%A0%94%E7%A9%B6%E8%AE%B0%E5%BD%95/%E5%8F%82%E8%80%83%E6%88%AA%E5%9B%BE/%E4%B8%B9%E5%B0%BC%E6%96%AF_%E9%A6%96%E9%A1%B5_%E6%A1%8C%E9%9D%A2.png",
+      "引用文档": [
+        "04_网站与数字体验案例/Dennis-Snellenberg-结构交互与动效.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/migo-portfolio/c1b787c4100443761ed63cb142f9df75f480970b/UI%E8%AE%BE%E8%AE%A1/%E7%A0%94%E7%A9%B6%E8%AE%B0%E5%BD%95/%E5%8F%82%E8%80%83%E6%88%AA%E5%9B%BE/%E4%B8%B9%E5%B0%BC%E6%96%AF_%E6%A1%88%E4%BE%8B_%E6%89%8B%E6%9C%BA.png",
+      "引用文档": [
+        "04_网站与数字体验案例/Dennis-Snellenberg-结构交互与动效.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/migo-portfolio/c1b787c4100443761ed63cb142f9df75f480970b/UI%E8%AE%BE%E8%AE%A1/%E7%A0%94%E7%A9%B6%E8%AE%B0%E5%BD%95/%E4%B8%B9%E5%B0%BC%E6%96%AF%E4%BA%A4%E4%BA%92%E6%88%AA%E5%9B%BE/09_%E6%89%8B%E6%9C%BA%E8%8F%9C%E5%8D%95%E5%B1%95%E5%BC%80.png",
+      "引用文档": [
+        "04_网站与数字体验案例/Dennis-Snellenberg-结构交互与动效.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://www.jakeelwes.com/images/project-zizi-show.jpg",
+      "引用文档": [
+        "04_网站与数字体验案例/Jake-Elwes-艺术项目档案源码.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Duolingo/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/01_Duo%E8%BD%AE%E5%BB%93%E6%8E%A2%E7%B4%A2.png",
+      "引用文档": [
+        "03_角色与IP设计案例/Duolingo-角色识别与系统化表达.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Duolingo/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/02_Duo%E5%8E%86%E5%8F%B2%E9%80%A0%E5%9E%8B%E6%BC%94%E5%8F%98.png",
+      "引用文档": [
+        "03_角色与IP设计案例/Duolingo-角色识别与系统化表达.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Duolingo/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/03_Duo%E6%9E%84%E5%BD%A2%E7%A4%BA%E6%84%8F.png",
+      "引用文档": [
+        "03_角色与IP设计案例/Duolingo-角色识别与系统化表达.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Discord/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/03_Clyde%E5%8E%86%E5%8F%B2%E8%A1%A8%E6%83%85%E7%A4%BA%E4%BE%8B.png",
+      "引用文档": [
+        "03_角色与IP设计案例/Discord-Clyde识别与情绪表达.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Discord/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/01_Clyde%E5%8E%86%E5%8F%B2%E6%B0%94%E6%B3%A1%E6%A0%87%E8%AF%86.png",
+      "引用文档": [
+        "03_角色与IP设计案例/Discord-Clyde识别与情绪表达.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Discord/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/02_%E6%97%A7%E8%BD%AE%E5%BB%93%E5%AF%B9%E7%A7%B0%E6%80%A7%E5%88%86%E6%9E%90.png",
+      "引用文档": [
+        "03_角色与IP设计案例/Discord-Clyde识别与情绪表达.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg",
+      "引用文档": [
+        "03_角色与IP设计案例/纳尔-原皮与人格反差.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/01_%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E9%A1%B9%E7%9B%AE/03_%E8%A7%86%E8%A7%89%E6%A6%82%E5%BF%B5/%E6%A6%82%E5%BF%B5%E5%9B%BE/2026-11-12_%E5%8F%8C%E8%B6%B3%E6%8B%9F%E4%BA%BA%E4%BA%94%E6%96%B9%E5%90%91/AC3_%E5%8F%8C%E5%8F%B6%E8%80%B3%E7%BF%BC%E5%88%86%E8%89%B2%E5%8F%8C%E8%B6%B3_%E6%A6%82%E5%BF%B5%E5%9B%BE_V02.png",
+      "引用文档": [
+        "03_角色与IP设计案例/纳尔-原皮与人格反差.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Slligy/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/02_%E4%BA%BA%E6%A0%BC%E4%B8%8E%E5%8A%A8%E4%BD%9C%E8%8D%89%E5%9B%BE.jpg",
+      "引用文档": [
+        "03_角色与IP设计案例/Slligy-个人品牌与原创角色系统.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Slligy/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/03_%E7%BA%BF%E7%A8%BF%E4%B8%8E%E5%BD%A9%E8%89%B2%E5%BD%A2%E8%B1%A1.jpg",
+      "引用文档": [
+        "03_角色与IP设计案例/Slligy-个人品牌与原创角色系统.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Big%20Tea/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/01_%E5%AD%97%E6%A0%87%E4%B8%8E%E5%9D%90%E5%A7%BF%E8%A7%92%E8%89%B2.png",
+      "引用文档": [
+        "03_角色与IP设计案例/Big-Tea-角色与商业应用.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Big%20Tea/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/03_%E5%8A%A8%E4%BD%9C%E4%B8%8E%E9%A5%AE%E8%8C%B6%E6%83%85%E5%A2%83.png",
+      "引用文档": [
+        "03_角色与IP设计案例/Big-Tea-角色与商业应用.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/Migo%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C%E6%80%BB%E9%A1%B9%E7%9B%AE/03_%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/%E5%93%81%E7%89%8C%E8%AE%BE%E8%AE%A1%E6%A1%88%E4%BE%8B/Big%20Tea/%E8%A7%82%E5%AF%9F%E6%88%AA%E5%9B%BE/02_%E8%A7%92%E8%89%B2%E4%B8%8E%E5%AD%97%E6%A0%87%E4%BA%92%E5%8A%A8.png",
+      "引用文档": [
+        "03_角色与IP设计案例/Big-Tea-角色与商业应用.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://m.media-amazon.com/images/I/51Enb-eEUWL._AC_SL1500_.jpg",
+      "引用文档": [
+        "06_电商设计案例/02_跨境电商/便携台灯-五例商品图比较.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://www.jonathany.com/cdn/shop/files/JYL7116A-ICONS.jpg?v=1776490134&width=800",
+      "引用文档": [
+        "06_电商设计案例/02_跨境电商/便携台灯-五例商品图比较.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://www.jonathany.com/cdn/shop/files/JYL7116A-DIM.jpg?v=1776490134&width=800",
+      "引用文档": [
+        "06_电商设计案例/02_跨境电商/便携台灯-五例商品图比较.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/jpeg",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/NED_Eric_Lamp_%E6%B0%9B%E5%9B%B4%E7%81%AF/%E5%8F%82%E8%80%83%E8%B0%83%E7%A0%94/Banner%E5%90%8C%E7%B1%BB%E5%93%81%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90-2026-11-05/flowerpot_%E5%AE%98%E6%96%B9%E5%9C%BA%E6%99%AF.png",
+      "引用文档": [
+        "06_电商设计案例/02_跨境电商/便携台灯-三品牌场景与横幅比较.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/NED_Eric_Lamp_%E6%B0%9B%E5%9B%B4%E7%81%AF/%E5%8F%82%E8%80%83%E8%B0%83%E7%A0%94/Banner%E5%90%8C%E7%B1%BB%E5%93%81%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90-2026-11-05/audo_%E5%AE%98%E6%96%B9%E5%9C%BA%E6%99%AF.png",
+      "引用文档": [
+        "06_电商设计案例/02_跨境电商/便携台灯-三品牌场景与横幅比较.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    },
+    {
+      "图片URL": "https://raw.githubusercontent.com/Migo1203/AIGC/ecaf777984cafb520f79d24b425a213fcf159998/%E4%BD%9C%E5%93%81%E9%A1%B9%E7%9B%AE/NED_Eric_Lamp_%E6%B0%9B%E5%9B%B4%E7%81%AF/%E5%8F%82%E8%80%83%E8%B0%83%E7%A0%94/Banner%E5%90%8C%E7%B1%BB%E5%93%81%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90-2026-11-05/fatboy_%E5%AE%98%E6%96%B9%E5%9C%BA%E6%99%AF.png",
+      "引用文档": [
+        "06_电商设计案例/02_跨境电商/便携台灯-三品牌场景与横幅比较.md"
+      ],
+      "HTTP状态": 200,
+      "内容类型": "image/png",
+      "可读取": true
+    }
+  ]
+}

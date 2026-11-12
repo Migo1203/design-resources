@@ -14,17 +14,18 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[3]
 BASE = ROOT / '设计研究库'
-INDEX = BASE / '08_研究模板与索引'
+INDEX = BASE / '研究模板与索引'
 CATEGORIES = {
     '01_设计师档案': '设计师档案', '02_品牌设计案例': '品牌案例',
     '03_角色与IP设计案例': '角色与IP案例', '04_网站与数字体验案例': '网站案例',
-    '05_平面与视觉设计案例': '平面视觉案例', '06_设计方法专题': '设计方法专题',
-    '07_教程与学习资源': '教程与学习资源',
+    '05_平面与视觉设计案例': '平面视觉案例', '设计方法专题': '设计方法专题',
+    '教程与学习资源': '教程与学习资源',
+    '06_电商设计案例': '电商案例',
 }
 STATUSES = ['待研究', '研究中', '待补充', '已完成', '已应用验证', '已搁置']
 INDEX_TYPES = {'设计师索引.md': '设计师档案', '品牌案例索引.md': '品牌案例',
                'IP案例索引.md': '角色与IP案例', '网站案例索引.md': '网站案例',
-               '视觉案例索引.md': '平面视觉案例'}
+               '视觉案例索引.md': '平面视觉案例', '电商案例索引.md': '电商案例'}
 REQUIRED = {'标题', '研究类型', '研究状态', '创建日期', '更新日期', '标签', '关联项目'}
 
 # 拒绝重复键，避免 YAML 看起来一个状态、程序实际读到另一个状态。
@@ -172,7 +173,7 @@ def generated(records):
     outputs = {'研究总索引.md': summary}
     for name, typ in INDEX_TYPES.items():
         outputs[name] = '# '+name[:-3]+'\n\n'+note+table([d for d in records if d['研究类型'] == typ])+'\n\n[研究总索引](研究总索引.md) · [维护规则](README.md)\n'
-    # 从人物档案的来源表提取，不维护第二份手工来源数据库。
+    # 从全部研究档案的来源表提取，不维护第二份手工来源数据库。
     sources = '# 资料来源清单\n\n'+note+'本清单从实际研究来源表提取；访问状态和可信度必须一起看。外部链接不提供素材授权，原始作品图不复制到仓库。\n\n| 研究档案 | 来源编号 | 来源与原始链接 | 访问日期 | 可信度 | 核验范围与限制 |\n| --- | --- | --- | --- | --- | --- |\n'
     for d in records:
         for row in d['_body'].splitlines():
@@ -230,7 +231,7 @@ def main():
             elif not path.exists() or path.read_text() != text:
                 raise ValueError('索引过期或缺失：'+name+'；请先运行 --write')
         links = check_links()
-        print(f'通过：{len(records)}份研究、{len(vocabulary)}个定义标签、7类模板、{len(outputs)}份生成文件、{links}个本地Markdown链接。')
+        print(f'通过：{len(records)}份研究、{len(vocabulary)}个定义标签、{len(list((INDEX/'模板').glob('*.md')))}类模板、{len(outputs)}份生成文件、{links}个本地Markdown链接。')
         print('检查不自动确认事实、图像已查看、审美认可或项目应用。')
     except (ValueError, OSError, yaml.YAMLError) as error:
         print('检查失败：'+str(error), file=sys.stderr)
