@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>素材文件读取样张｜候选资源</title>
+  <style>
+    @font-face{font-family:IntakeCN;src:url('../字体/Noto_Sans_SC/简体无衬线可变.ttf') format('truetype');font-weight:100 900;font-display:swap}
+    @font-face{font-family:IntakeEN;src:url('../字体/Inter/西文无衬线可变.ttf') format('truetype');font-weight:100 900;font-display:swap}
+    *{box-sizing:border-box}body{margin:0;background:#f2f2f2;color:#202020;font-family:IntakeCN,sans-serif;line-height:1.6}
+    main{max-width:1160px;margin:auto;padding:40px 36px}h1{font-size:30px;margin:8px 0}h2{font-size:20px;margin:0 0 20px}.label,.note{color:#555;font-size:14px}.label{letter-spacing:.06em}.note{margin-bottom:0}
+    section{background:white;border:1px solid #d5d5d5;padding:28px;margin-top:20px}.sample{margin:12px 0;font-size:30px}.small{font-size:18px}.en{font-family:IntakeEN,sans-serif}.bold{font-weight:700}.regular{font-weight:400}
+    #load-status{padding:10px 14px;border:1px solid #ccc;background:white;font-size:14px}ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}li{text-align:center;background:#f7f7f7;padding:16px 4px;font-size:14px}li img{display:block;width:32px;height:32px;margin:0 auto 10px}
+    footer{font-size:13px;color:#555;margin-top:20px}@media(max-width:600px){main{padding:20px 16px}section{padding:20px}ul{grid-template-columns:repeat(3,minmax(0,1fr))}.sample{font-size:24px}h1{font-size:26px}}
+  </style>
+</head>
+<body>
+<main>
+  <div class="label">实际文件样张 · 2026-11-14</div>
+  <h1>字体与图标候选读取预览</h1>
+  <p>用于检查本地素材；尚未确认为Migo品牌资产，也不是网站UI设计稿。</p>
+  <p id="load-status" role="status">正在检查字体与图标加载……</p>
+  <section>
+    <h2>字001 · Noto Sans SC / 简体中文</h2>
+    <p class="sample regular">你好，我是Migo。</p>
+    <p class="sample bold">好奇探索，认真设计。</p>
+    <p class="small regular">作品 / 关于 / 联系　0123456789</p>
+    <p class="note">本地可变TTF · 示例字重400与700 · 仅验证样本文字覆盖，未覆盖全字库。</p>
+  </section>
+  <section>
+    <h2>字002 · Inter / 西文与数字</h2>
+    <p class="sample en regular" lang="en">Migo Personal Portfolio</p>
+    <p class="sample en bold" lang="en">NED Eric Lamp</p>
+    <p class="small en regular" lang="en">Work / About / Contact　0123456789</p>
+    <p class="note">本地可变TTF直立体 · 示例字重400与700 · 不承担中文显示。</p>
+  </section>
+  <section>
+    <h2>图001—图006 · Lucide / 六枚SVG</h2>
+    <ul>
+      <li><img src="../图标/Lucide/右箭头.svg" alt="" width="32" height="32">右箭头</li>
+      <li><img src="../图标/Lucide/右上箭头.svg" alt="" width="32" height="32">右上箭头</li>
+      <li><img src="../图标/Lucide/菜单.svg" alt="" width="32" height="32">菜单</li>
+      <li><img src="../图标/Lucide/关闭.svg" alt="" width="32" height="32">关闭</li>
+      <li><img src="../图标/Lucide/邮件.svg" alt="" width="32" height="32">邮件</li>
+      <li><img src="../图标/Lucide/外部链接.svg" alt="" width="32" height="32">外部链接</li>
+    </ul>
+    <p class="note">源SVG为24×24画布、2单位描边；此处放大显示为32×32，无改形、无交互功能。</p>
+  </section>
+  <footer>字体按各自OFL 1.1许可保存；图标保留完整ISC与Feather MIT声明。原件、来源固定提交与许可见上级清单。颜色、字号和间距仅用于中性检查。</footer>
+</main>
+<script>
+(async()=>{
+  const status=document.querySelector('#load-status');
+  try{
+    const requests=[['IntakeCN',400,'你好，我是Migo。'],['IntakeCN',700,'好奇探索，认真设计。'],['IntakeEN',400,'Migo Personal Portfolio'],['IntakeEN',700,'NED Eric Lamp']];
+    const faces=await Promise.all(requests.map(([family,weight,text])=>document.fonts.load(`${weight} 24px ${family}`,text)));
+    if(faces.some(list=>list.length===0))throw new Error('字体文件未加载，不能用回退字体通过检查');
+    await Promise.all([...document.images].map(img=>img.decode()));
+    const valid=requests.every(([family,weight,text])=>document.fonts.check(`${weight} 24px ${family}`,text));
+    if(!valid)throw new Error('字体检查未通过');
+    status.textContent='本地文件已加载：2款字体（400 / 700）与6枚SVG。字形覆盖范围以入库记录为准。';
+    document.documentElement.dataset.previewReady='true';
+  }catch(error){status.textContent='加载失败：'+error.message+'。请保持目录结构，或使用本地HTTP服务；不要把回退字体当作已加载。';document.documentElement.dataset.previewReady='false';}
+})();
+</script>
+</body>
+</html>

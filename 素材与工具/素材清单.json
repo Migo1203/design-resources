@@ -1,0 +1,342 @@
+{
+  "清单版本": 1,
+  "更新日期": "2026-11-14",
+  "说明": "仅为候选资源入库；未确认为Migo品牌资产。文件外部中文命名，二进制及SVG内容保持源版本原样。",
+  "来源版本": {
+    "字体": {
+      "仓库": "google/fonts",
+      "提交": "29b4ec6df2522a8aee279414b78a07910b065874"
+    },
+    "图标": {
+      "仓库": "lucide-icons/lucide",
+      "提交": "55782beff3a0133df79c417eb68f96e8f19e2404"
+    }
+  },
+  "素材": [
+    {
+      "编号": "字001",
+      "名称": "Noto Sans SC",
+      "分类": "字体",
+      "文件": "字体/Noto_Sans_SC/简体无衬线可变.ttf",
+      "格式": "TTF",
+      "状态": "候选",
+      "作者或维护者": "Google；版权声明见许可证",
+      "原始文件名": "NotoSansSC[wght].ttf",
+      "来源页面": "https://github.com/google/fonts/blob/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "下载链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "下载日期": "2026-11-14",
+      "文件字节数": 17772300,
+      "SHA256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "许可证": "SIL OFL 1.1",
+      "许可证文件": "字体/Noto_Sans_SC/字体许可证.txt",
+      "读取情况": "字体元数据与样文cmap检查通过；浏览器400/700加载通过；已查看桌面及手机样张",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "入库读取检查",
+          "记录文件": "首批入库验收记录.md",
+          "预览文件": "预览/首批素材样张.png",
+          "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        }
+      ],
+      "字体家族": "Noto Sans SC Thin",
+      "字体版本": "Version 2.004-H2;hotconv 1.0.118;makeotfexe 2.5.65603",
+      "可变轴": {
+        "wght": {
+          "最小": 100.0,
+          "默认": 100.0,
+          "最大": 900.0
+        }
+      },
+      "字形检查文本": "你好，我是Migo。好奇探索，认真设计。作品关于联系0123456789",
+      "缺失字形": []
+    },
+    {
+      "编号": "字002",
+      "名称": "Inter",
+      "分类": "字体",
+      "文件": "字体/Inter/西文无衬线可变.ttf",
+      "格式": "TTF",
+      "状态": "候选",
+      "作者或维护者": "Rasmus Andersson；The Inter Project Authors",
+      "原始文件名": "Inter[opsz,wght].ttf",
+      "来源页面": "https://github.com/google/fonts/blob/29b4ec6df2522a8aee279414b78a07910b065874/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+      "下载链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "下载日期": "2026-11-14",
+      "文件字节数": 876576,
+      "SHA256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "许可证": "SIL OFL 1.1",
+      "许可证文件": "字体/Inter/字体许可证.txt",
+      "读取情况": "字体元数据与样文cmap检查通过；浏览器400/700加载通过；已查看桌面及手机样张",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "入库读取检查",
+          "记录文件": "首批入库验收记录.md",
+          "预览文件": "预览/首批素材样张.png",
+          "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        }
+      ],
+      "字体家族": "Inter",
+      "字体版本": "Version 4.001;git-66647c0bb",
+      "可变轴": {
+        "opsz": {
+          "最小": 14.0,
+          "默认": 14.0,
+          "最大": 32.0
+        },
+        "wght": {
+          "最小": 100.0,
+          "默认": 400.0,
+          "最大": 900.0
+        }
+      },
+      "字形检查文本": "Migo Personal Portfolio NED Eric Lamp 0123456789",
+      "缺失字形": []
+    },
+    {
+      "编号": "图001",
+      "名称": "Lucide arrow-right",
+      "分类": "图标",
+      "文件": "图标/Lucide/右箭头.svg",
+      "格式": "SVG",
+      "状态": "候选",
+      "作者或维护者": "Lucide Icons and Contributors；适用时含Cole Bemis的Feather贡献",
+      "原始文件名": "arrow-right.svg",
+      "来源页面": "https://github.com/lucide-icons/lucide/blob/55782beff3a0133df79c417eb68f96e8f19e2404/icons/arrow-right.svg",
+      "下载链接": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/icons/arrow-right.svg",
+      "来源提交": "55782beff3a0133df79c417eb68f96e8f19e2404",
+      "下载日期": "2026-11-14",
+      "文件字节数": 261,
+      "SHA256": "288397fdb73bb4f783cf9eabb726ff47357df1d4e3f1201dd748090579f108b9",
+      "许可证": "ISC及源包保留的Feather MIT声明",
+      "许可证文件": "图标/Lucide/图标许可证.txt",
+      "读取情况": "SVG结构检查通过；浏览器加载通过；已查看桌面及手机样张",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "入库读取检查",
+          "记录文件": "首批入库验收记录.md",
+          "预览文件": "预览/首批素材样张.png",
+          "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        }
+      ],
+      "画布": "0 0 24 24",
+      "描边宽度": "2"
+    },
+    {
+      "编号": "图002",
+      "名称": "Lucide arrow-up-right",
+      "分类": "图标",
+      "文件": "图标/Lucide/右上箭头.svg",
+      "格式": "SVG",
+      "状态": "候选",
+      "作者或维护者": "Lucide Icons and Contributors；适用时含Cole Bemis的Feather贡献",
+      "原始文件名": "arrow-up-right.svg",
+      "来源页面": "https://github.com/lucide-icons/lucide/blob/55782beff3a0133df79c417eb68f96e8f19e2404/icons/arrow-up-right.svg",
+      "下载链接": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/icons/arrow-up-right.svg",
+      "来源提交": "55782beff3a0133df79c417eb68f96e8f19e2404",
+      "下载日期": "2026-11-14",
+      "文件字节数": 260,
+      "SHA256": "50b2503b9d11881142255466b7e3461d022b919735841c321d72003ac9959fe1",
+      "许可证": "ISC及源包保留的Feather MIT声明",
+      "许可证文件": "图标/Lucide/图标许可证.txt",
+      "读取情况": "SVG结构检查通过；浏览器加载通过；已查看桌面及手机样张",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "入库读取检查",
+          "记录文件": "首批入库验收记录.md",
+          "预览文件": "预览/首批素材样张.png",
+          "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        }
+      ],
+      "画布": "0 0 24 24",
+      "描边宽度": "2"
+    },
+    {
+      "编号": "图003",
+      "名称": "Lucide menu",
+      "分类": "图标",
+      "文件": "图标/Lucide/菜单.svg",
+      "格式": "SVG",
+      "状态": "候选",
+      "作者或维护者": "Lucide Icons and Contributors；适用时含Cole Bemis的Feather贡献",
+      "原始文件名": "menu.svg",
+      "来源页面": "https://github.com/lucide-icons/lucide/blob/55782beff3a0133df79c417eb68f96e8f19e2404/icons/menu.svg",
+      "下载链接": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/icons/menu.svg",
+      "来源提交": "55782beff3a0133df79c417eb68f96e8f19e2404",
+      "下载日期": "2026-11-14",
+      "文件字节数": 279,
+      "SHA256": "af6491988ac1ba30dc5414f485bc48713e957e1edb0fbef4a0dd8691c3c21598",
+      "许可证": "ISC及源包保留的Feather MIT声明",
+      "许可证文件": "图标/Lucide/图标许可证.txt",
+      "读取情况": "SVG结构检查通过；浏览器加载通过；已查看桌面及手机样张",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "入库读取检查",
+          "记录文件": "首批入库验收记录.md",
+          "预览文件": "预览/首批素材样张.png",
+          "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        }
+      ],
+      "画布": "0 0 24 24",
+      "描边宽度": "2"
+    },
+    {
+      "编号": "图004",
+      "名称": "Lucide x",
+      "分类": "图标",
+      "文件": "图标/Lucide/关闭.svg",
+      "格式": "SVG",
+      "状态": "候选",
+      "作者或维护者": "Lucide Icons and Contributors；适用时含Cole Bemis的Feather贡献",
+      "原始文件名": "x.svg",
+      "来源页面": "https://github.com/lucide-icons/lucide/blob/55782beff3a0133df79c417eb68f96e8f19e2404/icons/x.svg",
+      "下载链接": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/icons/x.svg",
+      "来源提交": "55782beff3a0133df79c417eb68f96e8f19e2404",
+      "下载日期": "2026-11-14",
+      "文件字节数": 260,
+      "SHA256": "4a9cdab38fbb96162e7dace28e33f4ca0e49d8963a6162abc3d4691b7d675117",
+      "许可证": "ISC及源包保留的Feather MIT声明",
+      "许可证文件": "图标/Lucide/图标许可证.txt",
+      "读取情况": "SVG结构检查通过；浏览器加载通过；已查看桌面及手机样张",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "入库读取检查",
+          "记录文件": "首批入库验收记录.md",
+          "预览文件": "预览/首批素材样张.png",
+          "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        }
+      ],
+      "画布": "0 0 24 24",
+      "描边宽度": "2"
+    },
+    {
+      "编号": "图005",
+      "名称": "Lucide mail",
+      "分类": "图标",
+      "文件": "图标/Lucide/邮件.svg",
+      "格式": "SVG",
+      "状态": "候选",
+      "作者或维护者": "Lucide Icons and Contributors；适用时含Cole Bemis的Feather贡献",
+      "原始文件名": "mail.svg",
+      "来源页面": "https://github.com/lucide-icons/lucide/blob/55782beff3a0133df79c417eb68f96e8f19e2404/icons/mail.svg",
+      "下载链接": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/icons/mail.svg",
+      "来源提交": "55782beff3a0133df79c417eb68f96e8f19e2404",
+      "下载日期": "2026-11-14",
+      "文件字节数": 316,
+      "SHA256": "3236a51d5b8ce9b0528cf2e6ad07e527bd636dded6f5a9d656072052b99caea8",
+      "许可证": "ISC及源包保留的Feather MIT声明",
+      "许可证文件": "图标/Lucide/图标许可证.txt",
+      "读取情况": "SVG结构检查通过；浏览器加载通过；已查看桌面及手机样张",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "入库读取检查",
+          "记录文件": "首批入库验收记录.md",
+          "预览文件": "预览/首批素材样张.png",
+          "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        }
+      ],
+      "画布": "0 0 24 24",
+      "描边宽度": "2"
+    },
+    {
+      "编号": "图006",
+      "名称": "Lucide external-link",
+      "分类": "图标",
+      "文件": "图标/Lucide/外部链接.svg",
+      "格式": "SVG",
+      "状态": "候选",
+      "作者或维护者": "Lucide Icons and Contributors；适用时含Cole Bemis的Feather贡献",
+      "原始文件名": "external-link.svg",
+      "来源页面": "https://github.com/lucide-icons/lucide/blob/55782beff3a0133df79c417eb68f96e8f19e2404/icons/external-link.svg",
+      "下载链接": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/icons/external-link.svg",
+      "来源提交": "55782beff3a0133df79c417eb68f96e8f19e2404",
+      "下载日期": "2026-11-14",
+      "文件字节数": 332,
+      "SHA256": "3891241b8c3bfc3a8a930078f26ffc5a7e9763da6d0162ace2050b28d4c1d1fe",
+      "许可证": "ISC及源包保留的Feather MIT声明",
+      "许可证文件": "图标/Lucide/图标许可证.txt",
+      "读取情况": "SVG结构检查通过；浏览器加载通过；已查看桌面及手机样张",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "入库读取检查",
+          "记录文件": "首批入库验收记录.md",
+          "预览文件": "预览/首批素材样张.png",
+          "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        }
+      ],
+      "画布": "0 0 24 24",
+      "描边宽度": "2"
+    }
+  ],
+  "许可证原文": [
+    {
+      "文件": "字体/Noto_Sans_SC/字体许可证.txt",
+      "原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notosanssc/OFL.txt",
+      "SHA256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "文件": "字体/Inter/字体许可证.txt",
+      "原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/inter/OFL.txt",
+      "SHA256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "文件": "图标/Lucide/图标许可证.txt",
+      "原始链接": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/LICENSE",
+      "SHA256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    }
+  ],
+  "既有工具引用": [
+    {
+      "名称": "商业KV创意提案模板",
+      "目录": "../提案模板",
+      "文件": [
+        "../提案模板/index.html",
+        "../提案模板/proposal-data.js",
+        "../提案模板/proposal.js",
+        "../提案模板/提案结构预览.pdf"
+      ],
+      "状态": "现有结构演示模板；未复制、未修改"
+    }
+  ]
+}
