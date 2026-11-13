@@ -10,7 +10,7 @@
 
 ## 用户补充的设计参考网站
 
-[设计参考网站](设计参考网站.md)：2026-11-13收录The Branding Journal、Logopond、Appinspo（原输入`applnsop`，对应关系待确认）和AppFuel，按品牌策略、Logo、App视觉与UX分类，记录原始链接、用途和实际访问范围。AppFuel首页已转向广告／内容创意，另保留Screens与Tricks资料入口。
+[设计参考网站](设计参考网站.md)：2026-11-13收录The Branding Journal、Logopond、Appinspo（用户已确认原输入`applnsop`所指网站）和AppFuel，按品牌策略、Logo、App视觉与UX分类，记录原始链接、用途和实际访问范围。AppFuel首页已转向广告／内容创意，另保留Screens与Tricks资料入口。
 
 本入口与下方原目录统计分开维护，收录不等于用户认可站内作品或已经完成案例研究。
 
