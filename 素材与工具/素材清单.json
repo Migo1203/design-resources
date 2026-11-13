@@ -46,7 +46,7 @@
         {
           "日期": "2026-11-14",
           "类型": "字体批次读取与看图",
-          "记录文件": "字体/字体批次验收记录.md",
+          "记录文件": "字体/管理资料/字体批次验收记录.md",
           "预览文件": "字体/Noto_Sans_SC/字体样张.png",
           "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
         }
@@ -101,7 +101,7 @@
         {
           "日期": "2026-11-14",
           "类型": "字体批次读取与看图",
-          "记录文件": "字体/字体批次验收记录.md",
+          "记录文件": "字体/管理资料/字体批次验收记录.md",
           "预览文件": "字体/Inter/字体样张.png",
           "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
         }
@@ -360,7 +360,7 @@
         {
           "日期": "2026-11-14",
           "类型": "字体批次读取与看图",
-          "记录文件": "字体/字体批次验收记录.md",
+          "记录文件": "字体/管理资料/字体批次验收记录.md",
           "预览文件": "字体/Inter/字体样张.png",
           "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
         }
@@ -414,7 +414,7 @@
         {
           "日期": "2026-11-14",
           "类型": "字体批次读取与看图",
-          "记录文件": "字体/字体批次验收记录.md",
+          "记录文件": "字体/管理资料/字体批次验收记录.md",
           "预览文件": "字体/Noto_Serif_SC/字体样张.png",
           "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
         }
@@ -463,7 +463,7 @@
         {
           "日期": "2026-11-14",
           "类型": "字体批次读取与看图",
-          "记录文件": "字体/字体批次验收记录.md",
+          "记录文件": "字体/管理资料/字体批次验收记录.md",
           "预览文件": "字体/Source_Serif_4/字体样张.png",
           "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
         }
@@ -517,7 +517,7 @@
         {
           "日期": "2026-11-14",
           "类型": "字体批次读取与看图",
-          "记录文件": "字体/字体批次验收记录.md",
+          "记录文件": "字体/管理资料/字体批次验收记录.md",
           "预览文件": "字体/Source_Serif_4/字体样张.png",
           "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
         }
@@ -594,12 +594,12 @@
       "官方页面": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
       "官方文件目录": "https://github.com/google/fonts/tree/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notosanssc",
       "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
-      "元数据文件": "字体/Noto_Sans_SC/官方字体元数据.txt",
+      "元数据文件": "字体/管理资料/来源元数据/Noto_Sans_SC.txt",
       "元数据原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notosanssc/METADATA.pb",
       "元数据SHA256": "c6c4bdb785793b2de1da177caeeffcd0c90d7680bdab2de8f88ab45007bc59bc",
       "说明文件": "字体/Noto_Sans_SC/README.md",
       "样张图": "字体/Noto_Sans_SC/字体样张.png",
-      "样张HTML": "字体/Noto_Sans_SC/字体样张.html",
+      "样张HTML": "字体/管理资料/网页样张/Noto_Sans_SC.html",
       "目标原始文件名": [
         "NotoSansSC[wght].ttf"
       ]
@@ -613,12 +613,12 @@
       "官方页面": "https://fonts.google.com/noto/specimen/Noto+Serif+SC",
       "官方文件目录": "https://github.com/google/fonts/tree/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notoserifsc",
       "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
-      "元数据文件": "字体/Noto_Serif_SC/官方字体元数据.txt",
+      "元数据文件": "字体/管理资料/来源元数据/Noto_Serif_SC.txt",
       "元数据原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notoserifsc/METADATA.pb",
       "元数据SHA256": "e0c253c6f850fc3ef6e7fc398361133dd55acc408c931822a3f69cfac08554c2",
       "说明文件": "字体/Noto_Serif_SC/README.md",
       "样张图": "字体/Noto_Serif_SC/字体样张.png",
-      "样张HTML": "字体/Noto_Serif_SC/字体样张.html",
+      "样张HTML": "字体/管理资料/网页样张/Noto_Serif_SC.html",
       "目标原始文件名": [
         "NotoSerifSC[wght].ttf"
       ]
@@ -632,12 +632,12 @@
       "官方页面": "https://rsms.me/inter/",
       "官方文件目录": "https://github.com/google/fonts/tree/29b4ec6df2522a8aee279414b78a07910b065874/ofl/inter",
       "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
-      "元数据文件": "字体/Inter/官方字体元数据.txt",
+      "元数据文件": "字体/管理资料/来源元数据/Inter.txt",
       "元数据原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/inter/METADATA.pb",
       "元数据SHA256": "79e4721ef4f72251c6080a40dfd9efb6728b4df1fc690f0c70eb4b1b5303a5b0",
       "说明文件": "字体/Inter/README.md",
       "样张图": "字体/Inter/字体样张.png",
-      "样张HTML": "字体/Inter/字体样张.html",
+      "样张HTML": "字体/管理资料/网页样张/Inter.html",
       "目标原始文件名": [
         "Inter-Italic[opsz,wght].ttf",
         "Inter[opsz,wght].ttf"
@@ -652,12 +652,12 @@
       "官方页面": "https://github.com/adobe-fonts/source-serif",
       "官方文件目录": "https://github.com/google/fonts/tree/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4",
       "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
-      "元数据文件": "字体/Source_Serif_4/官方字体元数据.txt",
+      "元数据文件": "字体/管理资料/来源元数据/Source_Serif_4.txt",
       "元数据原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4/METADATA.pb",
       "元数据SHA256": "f7b88902c1d2f41839a3f7bf6723d1e64044c7c183b82871ce770a95f24b84e3",
       "说明文件": "字体/Source_Serif_4/README.md",
       "样张图": "字体/Source_Serif_4/字体样张.png",
-      "样张HTML": "字体/Source_Serif_4/字体样张.html",
+      "样张HTML": "字体/管理资料/网页样张/Source_Serif_4.html",
       "目标原始文件名": [
         "SourceSerif4-Italic[opsz,wght].ttf",
         "SourceSerif4[opsz,wght].ttf"

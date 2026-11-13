@@ -2,7 +2,7 @@
 """从已登记的本地字体生成HTML、每家族PNG及总览PNG，不下载字体。
 
 需要fontTools、Playwright与Chromium；在仓库根目录运行。
-仅重建字体目录中明确命名的样张与检查JSON，不改变候选或采用状态。
+PNG保留在字体目录；HTML与检查JSON集中写入管理资料，不改变候选或采用状态。
 """
 import functools
 import hashlib
@@ -21,6 +21,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 FONTS = ROOT/'字体'
+MANAGEMENT = FONTS/'管理资料'
 
 CSS = '''
 *{box-sizing:border-box}body{margin:0;color:#202020;background:#f1f1ef;font:16px/1.6 system-ui,sans-serif}
@@ -127,7 +128,7 @@ def generate():
     manifest=json.loads((ROOT/'素材清单.json').read_text())
     groups=manifest['字体家族清单']
     jobs=[]
-    overview=FONTS/'全部字体样张.html'
+    overview=MANAGEMENT/'网页样张/全部字体样张.html'
     jobs.append(('总览',overview,FONTS/'全部字体预览.png',make_page(groups,manifest,overview),1500))
     for group in groups:
         page=ROOT/group['样张HTML']
@@ -168,8 +169,8 @@ def generate():
             browser.close()
     finally:
         server.shutdown();server.server_close()
-    (FONTS/'字体样张检查记录.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-    print('生成并检查：4个家族独立PNG、字体总览PNG、5个HTML和手机总览；6个真实字体文件全部加载。')
+    (MANAGEMENT/'字体样张检查记录.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    print('生成并检查：4个家族独立PNG及总览；5个HTML和检查JSON集中在管理资料；6个真实字体文件全部加载。')
 
 if __name__=='__main__':
     generate()

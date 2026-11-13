@@ -4,7 +4,7 @@
   "检查": [
     {
       "名称": "总览",
-      "HTML": "字体/全部字体样张.html",
+      "HTML": "字体/管理资料/网页样张/全部字体样张.html",
       "PNG": "字体/全部字体预览.png",
       "截图SHA256": "5a5beb11fe7dff709bb357ba0e38222b7124e88fb1bce6b73bcb01eb63b958d0",
       "视口宽度": 1500,
@@ -301,7 +301,7 @@
     },
     {
       "名称": "Noto Sans SC",
-      "HTML": "字体/Noto_Sans_SC/字体样张.html",
+      "HTML": "字体/管理资料/网页样张/Noto_Sans_SC.html",
       "PNG": "字体/Noto_Sans_SC/字体样张.png",
       "截图SHA256": "16372d60f0a583be8d14eb8c1996863c3a6951f0c6a9761ec19c3ae81cc26e82",
       "视口宽度": 1200,
@@ -378,7 +378,7 @@
     },
     {
       "名称": "Noto Serif SC",
-      "HTML": "字体/Noto_Serif_SC/字体样张.html",
+      "HTML": "字体/管理资料/网页样张/Noto_Serif_SC.html",
       "PNG": "字体/Noto_Serif_SC/字体样张.png",
       "截图SHA256": "495cc2c7a862c409a68e798c6439349c985d08b8c40f98d98c44104fe6d79704",
       "视口宽度": 1200,
@@ -455,7 +455,7 @@
     },
     {
       "名称": "Inter",
-      "HTML": "字体/Inter/字体样张.html",
+      "HTML": "字体/管理资料/网页样张/Inter.html",
       "PNG": "字体/Inter/字体样张.png",
       "截图SHA256": "3878465712d995bfb54fd4cdf192750f202f29c18500cf3fbe89cb0f75d40d5b",
       "视口宽度": 1200,
@@ -552,7 +552,7 @@
     },
     {
       "名称": "Source Serif 4",
-      "HTML": "字体/Source_Serif_4/字体样张.html",
+      "HTML": "字体/管理资料/网页样张/Source_Serif_4.html",
       "PNG": "字体/Source_Serif_4/字体样张.png",
       "截图SHA256": "554611c500969d0895913a0bcfbcaec44b98391c7445ba8c8079b228228544b7",
       "视口宽度": 1200,

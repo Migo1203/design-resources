@@ -60,7 +60,7 @@ def check():
         if {x['原始文件名'] for x in members} != set(family['目标原始文件名']):
             raise ValueError('目标字体下载范围不完整：'+family['名称'])
     if families:
-        checks = json.loads(inside('字体/字体样张检查记录.json').read_text())
+        checks = json.loads(inside('字体/管理资料/字体样张检查记录.json').read_text())
         expected = {x['样张图'] for x in families} | {'字体/全部字体预览.png'}
         if {x['PNG'] for x in checks['检查']} != expected:
             raise ValueError('字体样张检查未覆盖全部家族和总览')
