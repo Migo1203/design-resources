@@ -35,12 +35,13 @@ def check():
         if item['许可证文件'] not in notices:
             raise ValueError('未登记许可证：'+ident)
         inside(item['许可证文件'])
-        if not all(item.get(k) for k in ['原始文件名','来源页面','下载链接','来源提交','下载日期','读取情况','项目采用情况']):
+        if not all(item.get(k) for k in ['原始文件名','来源页面','下载链接','下载日期','读取情况','项目采用情况']) or not (item.get('来源提交') or item.get('来源版本')):
             raise ValueError('缺少记录：'+ident)
     for item in data['许可证原文']:
         if hashlib.sha256(inside(item['文件']).read_bytes()).hexdigest() != item['SHA256']:
             raise ValueError('许可证原文有变化：'+item['文件'])
     actual = {str(p.relative_to(ROOT)) for folder in ['字体','图标','样机'] for p in (ROOT/folder).rglob('*') if p.suffix.lower() in {'.ttf','.otf','.woff','.woff2','.svg','.css','.psd','.psb'}}
+    actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'插画与矢量图').glob('*/原件/*') if p.is_file()}
     if actual != paths:
         raise ValueError('清单未覆盖实际原件：'+str(actual ^ paths))
     for item in data['既有工具引用']:
@@ -104,7 +105,32 @@ def check():
                 raise ValueError('样机PNG与检查记录不一致')
         if report['交互检查']['脚本或加载错误'] or report['交互检查']['外部请求数']:
             raise ValueError('样机读取存在错误或外部请求')
-    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机及全部预览；未修改任何状态。')
+    illustrations = data.get('插画套装清单', [])
+    for pack in illustrations:
+        members = sorted([x for x in data['素材'] if x.get('套装') == pack['名称']], key=lambda x: x['文件'])
+        listing = '\n'.join(x['文件']+'\t'+x['SHA256'] for x in members)
+        if len(members) != pack['原件数'] or sum(x['文件字节数'] for x in members) != pack['原件总字节数'] or hashlib.sha256(listing.encode()).hexdigest() != pack['原件集合SHA256']:
+            raise ValueError('插画套装数量、大小或原件集合不一致：'+pack['名称'])
+        for key in ['许可证文件','预览图','说明文件']:
+            inside(pack[key])
+    if illustrations:
+        management = data['插画管理资料']
+        inside(management['HTML'])
+        report = json.loads(inside(management['检查记录']).read_text())
+        expected_images = {p['预览图'] for p in illustrations} | {management['总览PNG']}
+        if {x['文件'] for x in report['截图']} != expected_images:
+            raise ValueError('插画预览未覆盖三套及总览')
+        for shot in report['截图']:
+            if hashlib.sha256(inside(shot['文件']).read_bytes()).hexdigest() != shot['SHA256']:
+                raise ValueError('插画截图与检查记录不一致：'+shot['文件'])
+            expected_ids = {x['编号'] for x in data['素材'] if x['分类'] == '插画与矢量图' and (shot['名称'] == '全部' or x.get('套装') == shot['名称'])}
+            proof = shot['实际结果']
+            if set(proof['编号']) != expected_ids or proof['原件数'] != len(expected_ids) or len(proof['编号']) != len(expected_ids) or not proof['图片读取']:
+                raise ValueError('插画截图的原件读取证明不完整：'+shot['名称'])
+        interaction = report['交互检查']
+        if interaction['脚本或加载错误'] or interaction['外部请求数'] or interaction['390px横向溢出']:
+            raise ValueError('插画预览存在加载或布局错误')
+    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画及全部预览；未修改任何状态。')
 
 if __name__ == '__main__':
     check()

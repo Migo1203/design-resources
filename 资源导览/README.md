@@ -18,6 +18,8 @@
 
 样机批次实际入库[Devices.css设备样机](../素材与工具/样机/README.md)：1个约59 KB的官方CSS原件及MIT许可，验证电脑、手机、平板三类，支持在本地预览中替换截图。它不是写实PSD；已核查但禁止再分发或下载失效的PSD来源只作候选入口，未复制原件。
 
+插画批次已入库[插画与矢量图](../素材与工具/插画与矢量图/README.md)：Hero Patterns的87个背景SVG、Open Doodles的33个人物／动物SVG，以及3dicons的1个1000×1000笔记本PNG。原件约2.74 MB，附每套与全部PNG预览；Hero Patterns为须署名的CC BY 4.0，另外两套为CC0。下载范围、来源及许可见套装说明，全部仍为候选／未采用。
+
 ## 用户补充的设计参考网站
 
 [设计参考网站](设计参考网站.md)：2026-11-13收录The Branding Journal、Logopond、Appinspo（用户已确认原输入`applnsop`所指网站）和AppFuel，按品牌策略、Logo、App视觉与UX分类，记录原始链接、用途和实际访问范围。AppFuel首页已转向广告／内容创意，另保留Screens与Tricks资料入口。
