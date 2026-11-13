@@ -20,6 +20,8 @@
 
 插画批次已入库[插画与矢量图](../素材与工具/插画与矢量图/README.md)：Hero Patterns的87个背景SVG、Open Doodles的33个人物／动物SVG，以及3dicons的1个1000×1000笔记本PNG。原件约2.74 MB，附每套与全部PNG预览；Hero Patterns为须署名的CC BY 4.0，另外两套为CC0。下载范围、来源及许可见套装说明，全部仍为候选／未采用。
 
+摄影与材质批次新增[两张完整摄影JPEG](../素材与工具/摄影图片/README.md)和[四张2K材质JPEG](../素材与工具/材质与纹理/README.md)，合计约19.49 MB。来源分别为Commons具体历史CC0文件和Poly Haven官方接口，附原件、作者、来源与实际预览。PSD继续核查但尚未取得原件，后续以[整理进度](../素材与工具/整理进度.md)为准；本页原网站条目统计不变。
+
 ## 用户补充的设计参考网站
 
 [设计参考网站](设计参考网站.md)：2026-11-13收录The Branding Journal、Logopond、Appinspo（用户已确认原输入`applnsop`所指网站）和AppFuel，按品牌策略、Logo、App视觉与UX分类，记录原始链接、用途和实际访问范围。AppFuel首页已转向广告／内容创意，另保留Screens与Tricks资料入口。

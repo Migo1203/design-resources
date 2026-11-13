@@ -45,3 +45,5 @@
 - 样机批次：实际入库的是`picturepan2/devices.css`固定版本的一份CSS及MIT许可；本轮仅验证电脑、手机、平板三类，可用本地HTML替换截图。不是PSD或Photoshop智能对象，不能把CSS包、背景照片、PNG效果图混称可编辑PSD。根入口和套装目录保留PNG、原件、许可、README；HTML与检查JSON集中管理。不把“免费商用”推断为原件可公开再分发；作者旧帖与当前下载条款／文件不同则记录差异。PSD候选未取得原件或许可不满足时只保留来源，不能标为已下载。本轮无最终品牌设计与网站代码变更。
 
 - 插画批次：当前三套共121个原件，Hero Patterns 87个SVG（Steve Schoger，CC BY 4.0，须署名）、Open Doodles 33个SVG（Pablo Stanley，CC0）、3dicons笔记本1个1000×1000 PNG（Vijay Verma，CC0）。先读`素材与工具/插画与矢量图/README.md`及套装说明。原件未改；Hero记录固定Git提交、ZIP容器blob与解压SVG哈希；Open Doodles记录官网快照日期、原链接、响应头和SHA256，无Git版本不得编造；3dicons只入库一个PNG，不冒称完整集合或可编辑三维模型。PNG与SVG严格区分，外部配图不得成为Migo原创角色资产。每套仅保留README、原件、PNG、许可，HTML与检查JSON集中到管理资料；统一清单不逐件另建元数据文件。预览生成脚本仅从本地清单读取，实际采用与用户认可另行登记。
+
+- 摄影／材质批次：先查`素材与工具/整理进度.md`，当前新增两张Commons历史CC0完整摄影JPEG、四张Poly Haven官方2K JPEG颜色贴图，均未采用。摄影按具体文件页固定修订及原图SHA1核实，不泛化当前Unsplash全站许可；不得将素材写成Migo本人摄影或工作室。Poly Haven记录files_hash、通道、官方MD5和本地SHA256，不把单张颜色图称为完整PBR材质。来源为官方API时使用可识别的User-Agent并遵守服务条款，预览只引用本地文件。Photoshop PSD尚未取得，403及许可矛盾只留候选，不冒称已下载或智能对象测试。`生成摄影材质预览.py`仅读取本地清单，生成PNG、管理HTML和检查JSON；人工查看记录与自动加载分开。后续类别按进度表依次维护，不建空目录、不批量下载或安装。

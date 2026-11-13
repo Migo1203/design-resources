@@ -32,6 +32,10 @@ def check():
             raise ValueError('原件与清单不一致：'+item['文件'])
         if item.get('源GitBlobSHA1') and hashlib.sha1(f'blob {len(raw)}\0'.encode()+raw).hexdigest() != item['源GitBlobSHA1']:
             raise ValueError('原件与官方Git blob不一致：'+item['文件'])
+        if item.get('原图SHA1') and hashlib.sha1(raw).hexdigest() != item['原图SHA1']:
+            raise ValueError('摄影原件与Commons SHA1不一致：'+item['文件'])
+        if item.get('官方文件MD5') and hashlib.md5(raw).hexdigest() != item['官方文件MD5']:
+            raise ValueError('材质原件与官方MD5不一致：'+item['文件'])
         if item['许可证文件'] not in notices:
             raise ValueError('未登记许可证：'+ident)
         inside(item['许可证文件'])
@@ -42,6 +46,7 @@ def check():
             raise ValueError('许可证原文有变化：'+item['文件'])
     actual = {str(p.relative_to(ROOT)) for folder in ['字体','图标','样机'] for p in (ROOT/folder).rglob('*') if p.suffix.lower() in {'.ttf','.otf','.woff','.woff2','.svg','.css','.psd','.psb'}}
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'插画与矢量图').glob('*/原件/*') if p.is_file()}
+    actual |= {str(p.relative_to(ROOT)) for folder in ['摄影图片','材质与纹理'] for p in (ROOT/folder).glob('*/原件/*') if p.is_file()}
     if actual != paths:
         raise ValueError('清单未覆盖实际原件：'+str(actual ^ paths))
     for item in data['既有工具引用']:
@@ -130,7 +135,32 @@ def check():
         interaction = report['交互检查']
         if interaction['脚本或加载错误'] or interaction['外部请求数'] or interaction['390px横向溢出']:
             raise ValueError('插画预览存在加载或布局错误')
-    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画及全部预览；未修改任何状态。')
+    image_packs = data.get('图像套装清单', [])
+    for pack in image_packs:
+        members = sorted([x for x in data['素材'] if x.get('套装') == pack['名称']], key=lambda x: x['文件'])
+        listing = '\n'.join(x['文件']+'\t'+x['SHA256'] for x in members)
+        if len(members) != pack['原件数'] or sum(x['文件字节数'] for x in members) != pack['原件总字节数'] or hashlib.sha256(listing.encode()).hexdigest() != pack['原件集合SHA256']:
+            raise ValueError('摄影／材质套装原件集合不一致：'+pack['名称'])
+        for key in ['说明文件','HTML','许可证文件']:
+            inside(pack[key])
+        report = json.loads(inside(pack['检查记录']).read_text())
+        if {x['文件'] for x in report['截图']} != {pack['预览图'],pack['总览图']}:
+            raise ValueError('摄影／材质预览缺失：'+pack['名称'])
+        for shot in report['截图']:
+            if hashlib.sha256(inside(shot['文件']).read_bytes()).hexdigest() != shot['SHA256']:
+                raise ValueError('摄影／材质预览与检查记录不一致')
+        proof = report['图像读取']
+        expected = {x['编号']:x for x in members}
+        if len(proof) != len(members) or {x['编号'] for x in proof} != set(expected):
+            raise ValueError('摄影／材质加载证明未覆盖全部原件')
+        for item in proof:
+            original = expected[item['编号']]
+            if not item['读取'] or (item['宽'],item['高']) != (original['图像结构']['宽'],original['图像结构']['高']):
+                raise ValueError('摄影／材质原图解码或尺寸有误：'+item['编号'])
+        interaction = report['交互检查']
+        if interaction['脚本或加载错误'] or interaction['外部请求数'] or interaction['390px横向溢出']:
+            raise ValueError('摄影／材质预览存在加载或布局错误')
+    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画、{len(image_packs)}套摄影／材质及全部预览；未修改任何状态。')
 
 if __name__ == '__main__':
     check()

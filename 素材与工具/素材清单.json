@@ -1,5 +1,5 @@
 {
-  "清单版本": 5,
+  "清单版本": 6,
   "更新日期": "2026-11-14",
   "说明": "仅为候选资源入库；未确认为Migo品牌资产。文件外部中文命名，二进制及SVG内容保持源版本原样。",
   "来源版本": {
@@ -99900,6 +99900,254 @@
         "高": 1000,
         "模式": "RGBA"
       }
+    },
+    {
+      "编号": "摄001",
+      "名称": "桌面设备布置",
+      "分类": "摄影图片",
+      "套装": "工作台摄影精选",
+      "文件": "摄影图片/工作台场景/原件/Desk_Setup_(Unsplash).jpg",
+      "格式": "JPEG",
+      "状态": "候选",
+      "原始文件名": "Desk_Setup_(Unsplash).jpg",
+      "下载链接": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Desk_Setup_%28Unsplash%29.jpg",
+      "下载日期": "2026-11-14",
+      "文件字节数": 903293,
+      "SHA256": "5e30c5839d51085e194c30cb9d325717cc1d52ce2c28510e093d46d144ad89c9",
+      "许可证": "CC0 1.0",
+      "许可证文件": "摄影图片/工作台场景/素材许可证.txt",
+      "图像结构": {
+        "宽": 5184,
+        "高": 3456,
+        "色彩模式": "RGB"
+      },
+      "读取情况": "原件完整解码、官方哈希及尺寸通过；Chromium预览与本地原图链接通过；已人工查看套装缩放预览，未测试PS编辑",
+      "项目采用情况": "未采用",
+      "验证记录": [],
+      "预览文件": "摄影图片/工作台场景/素材预览.png",
+      "适用项目": [
+        "通用视觉探索"
+      ],
+      "来源页面": "https://commons.wikimedia.org/wiki/File:Desk_Setup_(Unsplash).jpg",
+      "授权来源": "https://commons.wikimedia.org/wiki/File:Desk_Setup_(Unsplash).jpg",
+      "来源版本": "Wikimedia Commons页面修订1192930924；原图时间2017-05-13T17:43:27Z",
+      "固定来源页面": "https://commons.wikimedia.org/w/index.php?oldid=1192930924",
+      "作者或维护者": "Luke Chesser",
+      "原图SHA1": "9342254fb20365b4d98b0de743dbfddca983170c",
+      "原图时间": "2017-05-13T17:43:27Z",
+      "许可核验": {
+        "来源": "Commons逐文件extmetadata与授权页面",
+        "标识": "CC0",
+        "声明链接": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "源图制作日期": "2014-10-30"
+      },
+      "处理说明": "从Commons原始文件URL下载完整JPEG，未使用网页缩略图；字节未修改。历史CC0逐文件核实，不把当前Unsplash全站视为CC0。"
+    },
+    {
+      "编号": "摄002",
+      "名称": "窗边工作台",
+      "分类": "摄影图片",
+      "套装": "工作台摄影精选",
+      "文件": "摄影图片/工作台场景/原件/Workspace_organization_(Unsplash).jpg",
+      "格式": "JPEG",
+      "状态": "候选",
+      "原始文件名": "Workspace_organization_(Unsplash).jpg",
+      "下载链接": "https://upload.wikimedia.org/wikipedia/commons/7/75/Workspace_organization_%28Unsplash%29.jpg",
+      "下载日期": "2026-11-14",
+      "文件字节数": 7069140,
+      "SHA256": "9b0fc8d8eac5e61858d6c1dcd69a794635cf597c8220b0711e6ae3bac3b9287a",
+      "许可证": "CC0 1.0",
+      "许可证文件": "摄影图片/工作台场景/素材许可证.txt",
+      "图像结构": {
+        "宽": 5472,
+        "高": 3648,
+        "色彩模式": "RGB"
+      },
+      "读取情况": "原件完整解码、官方哈希及尺寸通过；Chromium预览与本地原图链接通过；已人工查看套装缩放预览，未测试PS编辑",
+      "项目采用情况": "未采用",
+      "验证记录": [],
+      "预览文件": "摄影图片/工作台场景/素材预览.png",
+      "适用项目": [
+        "通用视觉探索"
+      ],
+      "来源页面": "https://commons.wikimedia.org/wiki/File:Workspace_organization_(Unsplash).jpg",
+      "授权来源": "https://commons.wikimedia.org/wiki/File:Workspace_organization_(Unsplash).jpg",
+      "来源版本": "Wikimedia Commons页面修订1089455648；原图时间2017-08-20T04:55:18Z",
+      "固定来源页面": "https://commons.wikimedia.org/w/index.php?oldid=1089455648",
+      "作者或维护者": "Jeff Sheldon",
+      "原图SHA1": "c61f46d91e13a817d881101d3bb68727bb3af031",
+      "原图时间": "2017-08-20T04:55:18Z",
+      "许可核验": {
+        "来源": "Commons逐文件extmetadata与授权页面",
+        "标识": "CC0",
+        "声明链接": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "源图制作日期": "2017-05-23"
+      },
+      "处理说明": "从Commons原始文件URL下载完整JPEG，未使用网页缩略图；字节未修改。历史CC0逐文件核实，不把当前Unsplash全站视为CC0。"
+    },
+    {
+      "编号": "材001",
+      "名称": "木地板纹理",
+      "分类": "材质与纹理",
+      "套装": "Poly Haven材质精选",
+      "文件": "材质与纹理/Poly_Haven/原件/wood_floor_diff_2k.jpg",
+      "格式": "JPEG",
+      "状态": "候选",
+      "原始文件名": "wood_floor_diff_2k.jpg",
+      "下载链接": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_floor/wood_floor_diff_2k.jpg",
+      "下载日期": "2026-11-14",
+      "文件字节数": 2983667,
+      "SHA256": "7c3ff1164c8dd0758ef2c048e9a266d28174120de01052ec40e6ca486177345c",
+      "许可证": "CC0 1.0",
+      "许可证文件": "材质与纹理/Poly_Haven/素材许可证.txt",
+      "图像结构": {
+        "宽": 2048,
+        "高": 2048,
+        "色彩模式": "RGB"
+      },
+      "读取情况": "原件完整解码、官方哈希及尺寸通过；Chromium预览与本地原图链接通过；已人工查看套装缩放预览，未测试PS编辑",
+      "项目采用情况": "未采用",
+      "验证记录": [],
+      "预览文件": "材质与纹理/Poly_Haven/素材预览.png",
+      "适用项目": [
+        "通用视觉探索"
+      ],
+      "来源页面": "https://polyhaven.com/a/wood_floor",
+      "授权来源": "https://polyhaven.com/license",
+      "来源版本": "2026-11-14官方API快照；files_hash=a44e6375a09ab98780b876e709f2629e7ed30409",
+      "作者或维护者": "Dimitrios Savva",
+      "来源资产ID": "wood_floor",
+      "作者分工": {
+        "Dimitrios Savva": "All"
+      },
+      "官方文件MD5": "d209b7416b022ed06093aef068c7fe23",
+      "官方文件字节数": 2983667,
+      "下载分辨率": "2k",
+      "贴图通道": "Diffuse",
+      "处理说明": "仅下载官方2K JPEG颜色／漫反射贴图，原件未改；不包含法线、粗糙度、置换、模型或完整PBR套装。"
+    },
+    {
+      "编号": "材002",
+      "名称": "织物色彩图",
+      "分类": "材质与纹理",
+      "套装": "Poly Haven材质精选",
+      "文件": "材质与纹理/Poly_Haven/原件/fabric_pattern_07_col_1_2k.jpg",
+      "格式": "JPEG",
+      "状态": "候选",
+      "原始文件名": "fabric_pattern_07_col_1_2k.jpg",
+      "下载链接": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/fabric_pattern_07/fabric_pattern_07_col_1_2k.jpg",
+      "下载日期": "2026-11-14",
+      "文件字节数": 2650991,
+      "SHA256": "1f4941638b890d4535b1078067be8a831ca302d1e696ed959b4e4512de893cba",
+      "许可证": "CC0 1.0",
+      "许可证文件": "材质与纹理/Poly_Haven/素材许可证.txt",
+      "图像结构": {
+        "宽": 2048,
+        "高": 2048,
+        "色彩模式": "RGB"
+      },
+      "读取情况": "原件完整解码、官方哈希及尺寸通过；Chromium预览与本地原图链接通过；已人工查看套装缩放预览，未测试PS编辑",
+      "项目采用情况": "未采用",
+      "验证记录": [],
+      "预览文件": "材质与纹理/Poly_Haven/素材预览.png",
+      "适用项目": [
+        "通用视觉探索"
+      ],
+      "来源页面": "https://polyhaven.com/a/fabric_pattern_07",
+      "授权来源": "https://polyhaven.com/license",
+      "来源版本": "2026-11-14官方API快照；files_hash=af042f95980f6ccc87285c3bc23e11671a5fecde",
+      "作者或维护者": "Rob Tuytel",
+      "来源资产ID": "fabric_pattern_07",
+      "作者分工": {
+        "Rob Tuytel": "All"
+      },
+      "官方文件MD5": "ad5b3f69e889a6890d6413ea1568ff25",
+      "官方文件字节数": 2650991,
+      "下载分辨率": "2k",
+      "贴图通道": "col_1",
+      "处理说明": "仅下载官方2K JPEG颜色／漫反射贴图，原件未改；不包含法线、粗糙度、置换、模型或完整PBR套装。"
+    },
+    {
+      "编号": "材003",
+      "名称": "旧金属板纹理",
+      "分类": "材质与纹理",
+      "套装": "Poly Haven材质精选",
+      "文件": "材质与纹理/Poly_Haven/原件/metal_plate_diff_2k.jpg",
+      "格式": "JPEG",
+      "状态": "候选",
+      "原始文件名": "metal_plate_diff_2k.jpg",
+      "下载链接": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_diff_2k.jpg",
+      "下载日期": "2026-11-14",
+      "文件字节数": 2670774,
+      "SHA256": "864c9a653acd1f5034c9bbe7f955b18cc9687a81bbdfa805e7a2319939676910",
+      "许可证": "CC0 1.0",
+      "许可证文件": "材质与纹理/Poly_Haven/素材许可证.txt",
+      "图像结构": {
+        "宽": 2048,
+        "高": 2048,
+        "色彩模式": "RGB"
+      },
+      "读取情况": "原件完整解码、官方哈希及尺寸通过；Chromium预览与本地原图链接通过；已人工查看套装缩放预览，未测试PS编辑",
+      "项目采用情况": "未采用",
+      "验证记录": [],
+      "预览文件": "材质与纹理/Poly_Haven/素材预览.png",
+      "适用项目": [
+        "通用视觉探索"
+      ],
+      "来源页面": "https://polyhaven.com/a/metal_plate",
+      "授权来源": "https://polyhaven.com/license",
+      "来源版本": "2026-11-14官方API快照；files_hash=1046b39bf68d65eeb80dab84a99186a453ee94e0",
+      "作者或维护者": "Rob Tuytel",
+      "来源资产ID": "metal_plate",
+      "作者分工": {
+        "Rob Tuytel": "All"
+      },
+      "官方文件MD5": "91b841e7e619e55588f0183a703fb644",
+      "官方文件字节数": 2670774,
+      "下载分辨率": "2k",
+      "贴图通道": "Diffuse",
+      "处理说明": "仅下载官方2K JPEG颜色／漫反射贴图，原件未改；不包含法线、粗糙度、置换、模型或完整PBR套装。"
+    },
+    {
+      "编号": "材004",
+      "名称": "灰泥墙面纹理",
+      "分类": "材质与纹理",
+      "套装": "Poly Haven材质精选",
+      "文件": "材质与纹理/Poly_Haven/原件/grey_plaster_diff_2k.jpg",
+      "格式": "JPEG",
+      "状态": "候选",
+      "原始文件名": "grey_plaster_diff_2k.jpg",
+      "下载链接": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/grey_plaster/grey_plaster_diff_2k.jpg",
+      "下载日期": "2026-11-14",
+      "文件字节数": 3216521,
+      "SHA256": "2cd3a4fb2723d93da0eccf9b23aced757acabc35f94b0a97fc8986fe7e4242b5",
+      "许可证": "CC0 1.0",
+      "许可证文件": "材质与纹理/Poly_Haven/素材许可证.txt",
+      "图像结构": {
+        "宽": 2048,
+        "高": 2048,
+        "色彩模式": "RGB"
+      },
+      "读取情况": "原件完整解码、官方哈希及尺寸通过；Chromium预览与本地原图链接通过；已人工查看套装缩放预览，未测试PS编辑",
+      "项目采用情况": "未采用",
+      "验证记录": [],
+      "预览文件": "材质与纹理/Poly_Haven/素材预览.png",
+      "适用项目": [
+        "通用视觉探索"
+      ],
+      "来源页面": "https://polyhaven.com/a/grey_plaster",
+      "授权来源": "https://polyhaven.com/license",
+      "来源版本": "2026-11-14官方API快照；files_hash=a50b917a248abd0044b4c81bd68baa02d6584b66",
+      "作者或维护者": "Rob Tuytel",
+      "来源资产ID": "grey_plaster",
+      "作者分工": {
+        "Rob Tuytel": "All"
+      },
+      "官方文件MD5": "42190a8b8a5b2749c0d7e3a7354abfc8",
+      "官方文件字节数": 3216521,
+      "下载分辨率": "2k",
+      "贴图通道": "Diffuse",
+      "处理说明": "仅下载官方2K JPEG颜色／漫反射贴图，原件未改；不包含法线、粗糙度、置换、模型或完整PBR套装。"
     }
   ],
   "许可证原文": [
@@ -99947,6 +100195,20 @@
       "文件": "插画与矢量图/03_立体物体_3dicons/素材许可证.txt",
       "原始链接": "https://raw.githubusercontent.com/realvjy/3dicons/8884d59e68a7bae0e0e2163af5b6c2ad992c01c8/LICENSE",
       "SHA256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+    },
+    {
+      "文件": "摄影图片/工作台场景/素材许可证.txt",
+      "SHA256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "许可证": "CC0 1.0",
+      "来源": "https://raw.githubusercontent.com/spdx/license-list-data/31846481de7ea17d92f2f46fad76abe58b2e9bb0/text/CC0-1.0.txt",
+      "说明": "许可法律文本镜像；具体作品授权依据是素材记录中的来源页面。"
+    },
+    {
+      "文件": "材质与纹理/Poly_Haven/素材许可证.txt",
+      "SHA256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "许可证": "CC0 1.0",
+      "来源": "https://raw.githubusercontent.com/spdx/license-list-data/31846481de7ea17d92f2f46fad76abe58b2e9bb0/text/CC0-1.0.txt",
+      "说明": "许可法律文本镜像；具体作品授权依据是素材记录中的来源页面。"
     }
   ],
   "既有工具引用": [
@@ -100277,5 +100539,39 @@
     "HTML": "插画与矢量图/管理资料/素材预览.html",
     "检查记录": "插画与矢量图/管理资料/素材检查记录.json",
     "总览PNG": "插画与矢量图/全部素材预览.png"
-  }
+  },
+  "图像套装清单": [
+    {
+      "名称": "工作台摄影精选",
+      "分类": "摄影图片",
+      "目录": "摄影图片/工作台场景",
+      "作者": "Luke Chesser；Jeff Sheldon",
+      "原件数": 2,
+      "原件格式": "JPEG",
+      "原件总字节数": 7972433,
+      "原件集合SHA256": "dbd3b3c281b8e6837f28051bd25e365d9c8d404c40ca1eba9561167f265efae8",
+      "许可证文件": "摄影图片/工作台场景/素材许可证.txt",
+      "预览图": "摄影图片/工作台场景/素材预览.png",
+      "说明文件": "摄影图片/工作台场景/README.md",
+      "总览图": "摄影图片/全部素材预览.png",
+      "HTML": "摄影图片/管理资料/素材预览.html",
+      "检查记录": "摄影图片/管理资料/素材检查记录.json"
+    },
+    {
+      "名称": "Poly Haven材质精选",
+      "分类": "材质与纹理",
+      "目录": "材质与纹理/Poly_Haven",
+      "作者": "Dimitrios Savva；Rob Tuytel",
+      "原件数": 4,
+      "原件格式": "JPEG",
+      "原件总字节数": 11521953,
+      "原件集合SHA256": "5998ae6bdbcba6e14a1c84b8c445d131714f7e5feac45963835efa9c91961230",
+      "许可证文件": "材质与纹理/Poly_Haven/素材许可证.txt",
+      "预览图": "材质与纹理/Poly_Haven/素材预览.png",
+      "说明文件": "材质与纹理/Poly_Haven/README.md",
+      "总览图": "材质与纹理/全部素材预览.png",
+      "HTML": "材质与纹理/管理资料/素材预览.html",
+      "检查记录": "材质与纹理/管理资料/素材检查记录.json"
+    }
+  ]
 }

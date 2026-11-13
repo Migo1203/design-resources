@@ -43,6 +43,12 @@
 
 外部作品原件和预览图未被复制入库。这里保存的是来源和访问结果；以后取得具体可再分发文件再检查入库，不把该表冒充PSD素材包。
 
+## 本轮继续核查：PSD仍未入库
+
+2026-11-14继续核查[2 Free Laptop Mockup PSD](https://myphotoshopbrushes.com/resources/3545/2-free-laptop-mockup-psd)：页面列作者Hazem Tawfik、两项PSD、101 MB、CC0，正常公开下载请求返回403 Forbidden，未获得下载地址、ZIP或PSD。尚未对照原作者及包内授权，也未检查图层、智能对象或替换结果；不能计为可用PSD。
+
+[Super Dev Resources浏览器PSD](https://superdevresources.com/free-chrome-browser-psd-mockup-windows/)同时出现CC0与禁止转售的描述，许可表述存在差异；当前只保存入口，不将它无条件归为CC0。后续取得明确可再分发文件再入库，不用CSS样机或宣传图填充PSD数量。
+
 ## 简明目录
 
 ```text
