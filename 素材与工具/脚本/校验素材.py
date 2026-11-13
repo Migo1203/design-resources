@@ -68,7 +68,29 @@ def check():
             if hashlib.sha256(inside(check['PNG']).read_bytes()).hexdigest() != check['截图SHA256']:
                 raise ValueError('字体截图与检查记录不一致：'+check['PNG'])
             inside(check['HTML'])
-    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族及样张、既有工具引用；未修改任何状态。')
+    packs = data.get('图标套装清单', [])
+    for pack in packs:
+        members = sorted([x for x in data['素材'] if x.get('套装') == pack['名称']],key=lambda x:x['原始文件名'])
+        names = {x['原始文件名'] for x in members}
+        if len(members) != pack['SVG原件数'] or len(names) != len(members):
+            raise ValueError('图标套装数量或唯一名称不一致')
+        if sum(x['文件字节数'] for x in members) != pack['原件总字节数']:
+            raise ValueError('图标套装原件大小不一致')
+        listing = '\n'.join(x['原始文件名']+'\t'+x['源GitBlobSHA1'] for x in members)
+        if hashlib.sha256(listing.encode()).hexdigest() != pack['目标SVG集合SHA256']:
+            raise ValueError('图标套装与官方完整SVG集合不一致')
+        inside(pack['许可文件']); inside(pack['HTML'])
+        report = json.loads(inside(pack['检查记录']).read_text())
+        rendered = []
+        for check in report['检查']:
+            if hashlib.sha256(inside(check['PNG']).read_bytes()).hexdigest() != check['截图SHA256']:
+                raise ValueError('图标截图与检查记录不一致：'+check['PNG'])
+            if not check['实际结果']['图片读取'] or check['脚本或加载错误'] or check['外部请求数']:
+                raise ValueError('图标预览存在读取错误')
+            if check['名称'] != '常用': rendered.extend(check['实际结果']['当前名称'])
+        if len(rendered) != len(members) or set(rendered) != {x[:-4] for x in names}:
+            raise ValueError('图标总览未逐页覆盖完整套装')
+    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标及全部预览；未修改任何状态。')
 
 if __name__ == '__main__':
     check()
