@@ -1,5 +1,5 @@
 {
-  "清单版本": 1,
+  "清单版本": 2,
   "更新日期": "2026-11-14",
   "说明": "仅为候选资源入库；未确认为Migo品牌资产。文件外部中文命名，二进制及SVG内容保持源版本原样。",
   "来源版本": {
@@ -30,7 +30,7 @@
       "SHA256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
       "许可证": "SIL OFL 1.1",
       "许可证文件": "字体/Noto_Sans_SC/字体许可证.txt",
-      "读取情况": "字体元数据与样文cmap检查通过；浏览器400/700加载通过；已查看桌面及手机样张",
+      "读取情况": "官方GitBlob及SHA256一致；字体元数据与实际样文cmap通过；已查看独立PNG及总览；Chromium实际加载通过",
       "项目采用情况": "未采用",
       "适用项目": [
         "Migo个人网站"
@@ -42,6 +42,13 @@
           "记录文件": "首批入库验收记录.md",
           "预览文件": "预览/首批素材样张.png",
           "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        },
+        {
+          "日期": "2026-11-14",
+          "类型": "字体批次读取与看图",
+          "记录文件": "字体/字体批次验收记录.md",
+          "预览文件": "字体/Noto_Sans_SC/字体样张.png",
+          "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
         }
       ],
       "字体家族": "Noto Sans SC Thin",
@@ -53,8 +60,13 @@
           "最大": 900.0
         }
       },
-      "字形检查文本": "你好，我是Migo。好奇探索，认真设计。作品关于联系0123456789",
-      "缺失字形": []
+      "字形检查文本": "你好，我是Migo。好奇探索，认真设计。让想法变得清晰。作品关于联系0123456789，。！？：；（）",
+      "缺失字形": [],
+      "源GitBlobSHA1": "fb0637bafbcd804fe32152370a1225990745b4bc",
+      "字体家族目录": "字体/Noto_Sans_SC",
+      "样式": "normal",
+      "样张图": "字体/Noto_Sans_SC/字体样张.png",
+      "字体内嵌版权": "(c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
     },
     {
       "编号": "字002",
@@ -73,7 +85,7 @@
       "SHA256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
       "许可证": "SIL OFL 1.1",
       "许可证文件": "字体/Inter/字体许可证.txt",
-      "读取情况": "字体元数据与样文cmap检查通过；浏览器400/700加载通过；已查看桌面及手机样张",
+      "读取情况": "官方GitBlob及SHA256一致；字体元数据与实际样文cmap通过；已查看独立PNG及总览；Chromium实际加载通过",
       "项目采用情况": "未采用",
       "适用项目": [
         "Migo个人网站"
@@ -85,6 +97,13 @@
           "记录文件": "首批入库验收记录.md",
           "预览文件": "预览/首批素材样张.png",
           "范围": "Chromium桌面1400px、手机390px；素材样张，不属于项目采用验证"
+        },
+        {
+          "日期": "2026-11-14",
+          "类型": "字体批次读取与看图",
+          "记录文件": "字体/字体批次验收记录.md",
+          "预览文件": "字体/Inter/字体样张.png",
+          "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
         }
       ],
       "字体家族": "Inter",
@@ -101,8 +120,13 @@
           "最大": 900.0
         }
       },
-      "字形检查文本": "Migo Personal Portfolio NED Eric Lamp 0123456789",
-      "缺失字形": []
+      "字形检查文本": "Migo Personal Portfolio NED Eric Lamp Curious thinking, careful design. Work About Contact Aa Gg Rr Ii Ll 1 O 0 0123456789",
+      "缺失字形": [],
+      "源GitBlobSHA1": "047c92f6e2212473dc436020afed689527076d44",
+      "字体家族目录": "字体/Inter",
+      "样式": "normal",
+      "样张图": "字体/Inter/字体样张.png",
+      "字体内嵌版权": "Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)"
     },
     {
       "编号": "图001",
@@ -307,6 +331,217 @@
       ],
       "画布": "0 0 24 24",
       "描边宽度": "2"
+    },
+    {
+      "编号": "字003",
+      "名称": "Inter Italic",
+      "分类": "字体",
+      "文件": "字体/Inter/西文无衬线可变斜体.ttf",
+      "格式": "TTF",
+      "状态": "候选",
+      "作者或维护者": "Rasmus Andersson；完整版权见许可证与官方元数据",
+      "原始文件名": "Inter-Italic[opsz,wght].ttf",
+      "来源页面": "https://github.com/google/fonts/blob/29b4ec6df2522a8aee279414b78a07910b065874/ofl/inter/Inter-Italic%5Bopsz%2Cwght%5D.ttf",
+      "下载链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/inter/Inter-Italic%5Bopsz%2Cwght%5D.ttf",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "源GitBlobSHA1": "c177578428248f08eedcc60e292acc6f414c2167",
+      "下载日期": "2026-11-14",
+      "文件字节数": 906596,
+      "SHA256": "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6",
+      "许可证": "SIL OFL 1.1",
+      "许可证文件": "字体/Inter/字体许可证.txt",
+      "读取情况": "官方GitBlob及SHA256一致；字体元数据与实际样文cmap通过；已查看独立PNG及总览；Chromium实际加载通过",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站",
+        "Migo个人品牌排版探索"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "字体批次读取与看图",
+          "记录文件": "字体/字体批次验收记录.md",
+          "预览文件": "字体/Inter/字体样张.png",
+          "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
+        }
+      ],
+      "字体家族目录": "字体/Inter",
+      "样式": "italic",
+      "样张图": "字体/Inter/字体样张.png",
+      "字体家族": "Inter",
+      "字体版本": "Version 4.001;git-66647c0bb",
+      "字体内嵌版权": "Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)",
+      "可变轴": {
+        "opsz": {
+          "最小": 14.0,
+          "默认": 14.0,
+          "最大": 32.0
+        },
+        "wght": {
+          "最小": 100.0,
+          "默认": 400.0,
+          "最大": 900.0
+        }
+      },
+      "字形检查文本": "Migo Personal Portfolio NED Eric Lamp Curious thinking, careful design. Work About Contact Aa Gg Rr Ii Ll 1 O 0 0123456789",
+      "缺失字形": []
+    },
+    {
+      "编号": "字004",
+      "名称": "Noto Serif SC",
+      "分类": "字体",
+      "文件": "字体/Noto_Serif_SC/简体衬线可变.ttf",
+      "格式": "TTF",
+      "状态": "候选",
+      "作者或维护者": "Google；完整版权见许可证与官方元数据",
+      "原始文件名": "NotoSerifSC[wght].ttf",
+      "来源页面": "https://github.com/google/fonts/blob/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf",
+      "下载链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "源GitBlobSHA1": "eab063faf229160a52d3760f5555150e4eb9e5bf",
+      "下载日期": "2026-11-14",
+      "文件字节数": 25125512,
+      "SHA256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+      "许可证": "SIL OFL 1.1",
+      "许可证文件": "字体/Noto_Serif_SC/字体许可证.txt",
+      "读取情况": "官方GitBlob及SHA256一致；字体元数据与实际样文cmap通过；已查看独立PNG及总览；Chromium实际加载通过",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站",
+        "Migo个人品牌排版探索"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "字体批次读取与看图",
+          "记录文件": "字体/字体批次验收记录.md",
+          "预览文件": "字体/Noto_Serif_SC/字体样张.png",
+          "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
+        }
+      ],
+      "字体家族目录": "字体/Noto_Serif_SC",
+      "样式": "normal",
+      "样张图": "字体/Noto_Serif_SC/字体样张.png",
+      "字体家族": "Noto Serif SC ExtraLight",
+      "字体版本": "Version 2.003-H1;hotconv 1.1.1;makeotfexe 2.6.0",
+      "字体内嵌版权": "(c) 2017-2024 Adobe (http://www.adobe.com/).",
+      "可变轴": {
+        "wght": {
+          "最小": 200.0,
+          "默认": 200.0,
+          "最大": 900.0
+        }
+      },
+      "字形检查文本": "你好，我是Migo。好奇探索，认真设计。让想法变得清晰。作品关于联系0123456789，。！？：；（）",
+      "缺失字形": []
+    },
+    {
+      "编号": "字005",
+      "名称": "Source Serif 4",
+      "分类": "字体",
+      "文件": "字体/Source_Serif_4/西文衬线可变.ttf",
+      "格式": "TTF",
+      "状态": "候选",
+      "作者或维护者": "Frank Grießhammer；完整版权见许可证与官方元数据",
+      "原始文件名": "SourceSerif4[opsz,wght].ttf",
+      "来源页面": "https://github.com/google/fonts/blob/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4/SourceSerif4%5Bopsz%2Cwght%5D.ttf",
+      "下载链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4/SourceSerif4%5Bopsz%2Cwght%5D.ttf",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "源GitBlobSHA1": "40bbb58cb58e893ad0470f0bb291e096c73d3554",
+      "下载日期": "2026-11-14",
+      "文件字节数": 1209508,
+      "SHA256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b",
+      "许可证": "SIL OFL 1.1",
+      "许可证文件": "字体/Source_Serif_4/字体许可证.txt",
+      "读取情况": "官方GitBlob及SHA256一致；字体元数据与实际样文cmap通过；已查看独立PNG及总览；Chromium实际加载通过",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站",
+        "Migo个人品牌排版探索"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "字体批次读取与看图",
+          "记录文件": "字体/字体批次验收记录.md",
+          "预览文件": "字体/Source_Serif_4/字体样张.png",
+          "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
+        }
+      ],
+      "字体家族目录": "字体/Source_Serif_4",
+      "样式": "normal",
+      "样张图": "字体/Source_Serif_4/字体样张.png",
+      "字体家族": "Source Serif 4",
+      "字体版本": "Version 4.004;hotconv 1.0.116;makeotfexe 2.5.65601",
+      "字体内嵌版权": "© 2014 - 2021 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’.",
+      "可变轴": {
+        "wght": {
+          "最小": 200.0,
+          "默认": 400.0,
+          "最大": 900.0
+        },
+        "opsz": {
+          "最小": 8.0,
+          "默认": 20.0,
+          "最大": 60.0
+        }
+      },
+      "字形检查文本": "Migo Personal Portfolio NED Eric Lamp Curious thinking, careful design. Work About Contact Aa Gg Rr Ii Ll 1 O 0 0123456789",
+      "缺失字形": []
+    },
+    {
+      "编号": "字006",
+      "名称": "Source Serif 4 Italic",
+      "分类": "字体",
+      "文件": "字体/Source_Serif_4/西文衬线可变斜体.ttf",
+      "格式": "TTF",
+      "状态": "候选",
+      "作者或维护者": "Frank Grießhammer；完整版权见许可证与官方元数据",
+      "原始文件名": "SourceSerif4-Italic[opsz,wght].ttf",
+      "来源页面": "https://github.com/google/fonts/blob/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4/SourceSerif4-Italic%5Bopsz%2Cwght%5D.ttf",
+      "下载链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4/SourceSerif4-Italic%5Bopsz%2Cwght%5D.ttf",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "源GitBlobSHA1": "ccb969aa6847e1169ff9c8c8bdc28daff6966861",
+      "下载日期": "2026-11-14",
+      "文件字节数": 855432,
+      "SHA256": "15fbc7e4679489a501998c3669272637a6646388ef7e4bd77eebb5bf967a1f42",
+      "许可证": "SIL OFL 1.1",
+      "许可证文件": "字体/Source_Serif_4/字体许可证.txt",
+      "读取情况": "官方GitBlob及SHA256一致；字体元数据与实际样文cmap通过；已查看独立PNG及总览；Chromium实际加载通过",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人网站",
+        "Migo个人品牌排版探索"
+      ],
+      "验证记录": [
+        {
+          "日期": "2026-11-14",
+          "类型": "字体批次读取与看图",
+          "记录文件": "字体/字体批次验收记录.md",
+          "预览文件": "字体/Source_Serif_4/字体样张.png",
+          "范围": "本家族独立PNG与1500px总览已实际查看；390px总览通过横向溢出检查。仅为样张读取，不代表采用。"
+        }
+      ],
+      "字体家族目录": "字体/Source_Serif_4",
+      "样式": "italic",
+      "样张图": "字体/Source_Serif_4/字体样张.png",
+      "字体家族": "Source Serif 4",
+      "字体版本": "Version 4.004;hotconv 1.0.116;makeotfexe 2.5.65601",
+      "字体内嵌版权": "© 2014 - 2021 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’.",
+      "可变轴": {
+        "wght": {
+          "最小": 200.0,
+          "默认": 400.0,
+          "最大": 900.0
+        },
+        "opsz": {
+          "最小": 8.0,
+          "默认": 20.0,
+          "最大": 60.0
+        }
+      },
+      "字形检查文本": "Migo Personal Portfolio NED Eric Lamp Curious thinking, careful design. Work About Contact Aa Gg Rr Ii Ll 1 O 0 0123456789",
+      "缺失字形": []
     }
   ],
   "许可证原文": [
@@ -324,6 +559,16 @@
       "文件": "图标/Lucide/图标许可证.txt",
       "原始链接": "https://raw.githubusercontent.com/lucide-icons/lucide/55782beff3a0133df79c417eb68f96e8f19e2404/LICENSE",
       "SHA256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "文件": "字体/Noto_Serif_SC/字体许可证.txt",
+      "原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notoserifsc/OFL.txt",
+      "SHA256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+    },
+    {
+      "文件": "字体/Source_Serif_4/字体许可证.txt",
+      "原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4/OFL.txt",
+      "SHA256": "5f94c3fd3a23131a417ab5a0c8452de57e70c3cfb9f604d88241f7065ebf9fd9"
     }
   ],
   "既有工具引用": [
@@ -337,6 +582,86 @@
         "../提案模板/提案结构预览.pdf"
       ],
       "状态": "现有结构演示模板；未复制、未修改"
+    }
+  ],
+  "字体家族清单": [
+    {
+      "名称": "Noto Sans SC",
+      "目录": "字体/Noto_Sans_SC",
+      "分类说明": "中文无衬线",
+      "语言": "简体中文",
+      "用途": "正文、标题与导航的基础对照",
+      "官方页面": "https://fonts.google.com/noto/specimen/Noto+Sans+SC",
+      "官方文件目录": "https://github.com/google/fonts/tree/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notosanssc",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "元数据文件": "字体/Noto_Sans_SC/官方字体元数据.txt",
+      "元数据原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notosanssc/METADATA.pb",
+      "元数据SHA256": "c6c4bdb785793b2de1da177caeeffcd0c90d7680bdab2de8f88ab45007bc59bc",
+      "说明文件": "字体/Noto_Sans_SC/README.md",
+      "样张图": "字体/Noto_Sans_SC/字体样张.png",
+      "样张HTML": "字体/Noto_Sans_SC/字体样张.html",
+      "目标原始文件名": [
+        "NotoSansSC[wght].ttf"
+      ]
+    },
+    {
+      "名称": "Noto Serif SC",
+      "目录": "字体/Noto_Serif_SC",
+      "分类说明": "中文衬线",
+      "语言": "简体中文",
+      "用途": "编辑式标题与长文的衬线对照",
+      "官方页面": "https://fonts.google.com/noto/specimen/Noto+Serif+SC",
+      "官方文件目录": "https://github.com/google/fonts/tree/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notoserifsc",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "元数据文件": "字体/Noto_Serif_SC/官方字体元数据.txt",
+      "元数据原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/notoserifsc/METADATA.pb",
+      "元数据SHA256": "e0c253c6f850fc3ef6e7fc398361133dd55acc408c931822a3f69cfac08554c2",
+      "说明文件": "字体/Noto_Serif_SC/README.md",
+      "样张图": "字体/Noto_Serif_SC/字体样张.png",
+      "样张HTML": "字体/Noto_Serif_SC/字体样张.html",
+      "目标原始文件名": [
+        "NotoSerifSC[wght].ttf"
+      ]
+    },
+    {
+      "名称": "Inter",
+      "目录": "字体/Inter",
+      "分类说明": "西文无衬线",
+      "语言": "西文",
+      "用途": "英文、数字与界面文字的对照",
+      "官方页面": "https://rsms.me/inter/",
+      "官方文件目录": "https://github.com/google/fonts/tree/29b4ec6df2522a8aee279414b78a07910b065874/ofl/inter",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "元数据文件": "字体/Inter/官方字体元数据.txt",
+      "元数据原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/inter/METADATA.pb",
+      "元数据SHA256": "79e4721ef4f72251c6080a40dfd9efb6728b4df1fc690f0c70eb4b1b5303a5b0",
+      "说明文件": "字体/Inter/README.md",
+      "样张图": "字体/Inter/字体样张.png",
+      "样张HTML": "字体/Inter/字体样张.html",
+      "目标原始文件名": [
+        "Inter-Italic[opsz,wght].ttf",
+        "Inter[opsz,wght].ttf"
+      ]
+    },
+    {
+      "名称": "Source Serif 4",
+      "目录": "字体/Source_Serif_4",
+      "分类说明": "西文衬线",
+      "语言": "西文",
+      "用途": "英文案例、标题与真斜体的对照",
+      "官方页面": "https://github.com/adobe-fonts/source-serif",
+      "官方文件目录": "https://github.com/google/fonts/tree/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4",
+      "来源提交": "29b4ec6df2522a8aee279414b78a07910b065874",
+      "元数据文件": "字体/Source_Serif_4/官方字体元数据.txt",
+      "元数据原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4/METADATA.pb",
+      "元数据SHA256": "f7b88902c1d2f41839a3f7bf6723d1e64044c7c183b82871ce770a95f24b84e3",
+      "说明文件": "字体/Source_Serif_4/README.md",
+      "样张图": "字体/Source_Serif_4/字体样张.png",
+      "样张HTML": "字体/Source_Serif_4/字体样张.html",
+      "目标原始文件名": [
+        "SourceSerif4-Italic[opsz,wght].ttf",
+        "SourceSerif4[opsz,wght].ttf"
+      ]
     }
   ]
 }

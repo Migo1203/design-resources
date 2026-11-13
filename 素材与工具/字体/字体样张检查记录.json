@@ -1,0 +1,658 @@
+{
+  "日期": "2026-11-14",
+  "说明": "只验证本地样张；不确认用户偏好、软件安装或项目采用。",
+  "检查": [
+    {
+      "名称": "总览",
+      "HTML": "字体/全部字体样张.html",
+      "PNG": "字体/全部字体预览.png",
+      "截图SHA256": "5a5beb11fe7dff709bb357ba0e38222b7124e88fb1bce6b73bcb01eb63b958d0",
+      "视口宽度": 1500,
+      "实际结果": {
+        "样文": [
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "你好，我是Migo。",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "让想法变得清晰。作品 / 关于 / 联系",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "0123456789 ，。！？：；（）",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 500,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "你好，我是Migo。",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "让想法变得清晰。作品 / 关于 / 联系",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "0123456789 ，。！？：；（）",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 500,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Migo Personal Portfolio",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "NED Eric Lamp",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design. Work / About / Contact",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Aa Gg Rr Ii Ll 1 O 0 / 0123456789",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 500,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字003",
+            "别名": "LocalFont003",
+            "字重": 400,
+            "样式": "italic",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字003",
+            "别名": "LocalFont003",
+            "字重": 700,
+            "样式": "italic",
+            "文字": "Migo / NED Eric Lamp",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Migo Personal Portfolio",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "NED Eric Lamp",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design. Work / About / Contact",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Aa Gg Rr Ii Ll 1 O 0 / 0123456789",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 500,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字006",
+            "别名": "LocalFont006",
+            "字重": 400,
+            "样式": "italic",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字006",
+            "别名": "LocalFont006",
+            "字重": 700,
+            "样式": "italic",
+            "文字": "Migo / NED Eric Lamp",
+            "加载": true
+          }
+        ],
+        "页面宽度": 1500,
+        "视口宽度": 1500,
+        "字体": [
+          {
+            "名称": "LocalFont001",
+            "状态": "loaded"
+          },
+          {
+            "名称": "LocalFont002",
+            "状态": "loaded"
+          },
+          {
+            "名称": "LocalFont003",
+            "状态": "loaded"
+          },
+          {
+            "名称": "LocalFont004",
+            "状态": "loaded"
+          },
+          {
+            "名称": "LocalFont005",
+            "状态": "loaded"
+          },
+          {
+            "名称": "LocalFont006",
+            "状态": "loaded"
+          }
+        ]
+      },
+      "脚本或加载错误": [],
+      "外部请求数": 0
+    },
+    {
+      "名称": "Noto Sans SC",
+      "HTML": "字体/Noto_Sans_SC/字体样张.html",
+      "PNG": "字体/Noto_Sans_SC/字体样张.png",
+      "截图SHA256": "16372d60f0a583be8d14eb8c1996863c3a6951f0c6a9761ec19c3ae81cc26e82",
+      "视口宽度": 1200,
+      "实际结果": {
+        "样文": [
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "你好，我是Migo。",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "让想法变得清晰。作品 / 关于 / 联系",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "0123456789 ，。！？：；（）",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 500,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字001",
+            "别名": "LocalFont001",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          }
+        ],
+        "页面宽度": 1200,
+        "视口宽度": 1200,
+        "字体": [
+          {
+            "名称": "LocalFont001",
+            "状态": "loaded"
+          }
+        ]
+      },
+      "脚本或加载错误": [],
+      "外部请求数": 0
+    },
+    {
+      "名称": "Noto Serif SC",
+      "HTML": "字体/Noto_Serif_SC/字体样张.html",
+      "PNG": "字体/Noto_Serif_SC/字体样张.png",
+      "截图SHA256": "495cc2c7a862c409a68e798c6439349c985d08b8c40f98d98c44104fe6d79704",
+      "视口宽度": 1200,
+      "实际结果": {
+        "样文": [
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "你好，我是Migo。",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "让想法变得清晰。作品 / 关于 / 联系",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "0123456789 ，。！？：；（）",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 500,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          },
+          {
+            "编号": "字004",
+            "别名": "LocalFont004",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "好奇探索，认真设计。",
+            "加载": true
+          }
+        ],
+        "页面宽度": 1200,
+        "视口宽度": 1200,
+        "字体": [
+          {
+            "名称": "LocalFont004",
+            "状态": "loaded"
+          }
+        ]
+      },
+      "脚本或加载错误": [],
+      "外部请求数": 0
+    },
+    {
+      "名称": "Inter",
+      "HTML": "字体/Inter/字体样张.html",
+      "PNG": "字体/Inter/字体样张.png",
+      "截图SHA256": "3878465712d995bfb54fd4cdf192750f202f29c18500cf3fbe89cb0f75d40d5b",
+      "视口宽度": 1200,
+      "实际结果": {
+        "样文": [
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Migo Personal Portfolio",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "NED Eric Lamp",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design. Work / About / Contact",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Aa Gg Rr Ii Ll 1 O 0 / 0123456789",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 500,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字002",
+            "别名": "LocalFont002",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字003",
+            "别名": "LocalFont003",
+            "字重": 400,
+            "样式": "italic",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字003",
+            "别名": "LocalFont003",
+            "字重": 700,
+            "样式": "italic",
+            "文字": "Migo / NED Eric Lamp",
+            "加载": true
+          }
+        ],
+        "页面宽度": 1200,
+        "视口宽度": 1200,
+        "字体": [
+          {
+            "名称": "LocalFont002",
+            "状态": "loaded"
+          },
+          {
+            "名称": "LocalFont003",
+            "状态": "loaded"
+          }
+        ]
+      },
+      "脚本或加载错误": [],
+      "外部请求数": 0
+    },
+    {
+      "名称": "Source Serif 4",
+      "HTML": "字体/Source_Serif_4/字体样张.html",
+      "PNG": "字体/Source_Serif_4/字体样张.png",
+      "截图SHA256": "554611c500969d0895913a0bcfbcaec44b98391c7445ba8c8079b228228544b7",
+      "视口宽度": 1200,
+      "实际结果": {
+        "样文": [
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Migo Personal Portfolio",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "NED Eric Lamp",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design. Work / About / Contact",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Aa Gg Rr Ii Ll 1 O 0 / 0123456789",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 400,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 500,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字005",
+            "别名": "LocalFont005",
+            "字重": 700,
+            "样式": "normal",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字006",
+            "别名": "LocalFont006",
+            "字重": 400,
+            "样式": "italic",
+            "文字": "Curious thinking, careful design.",
+            "加载": true
+          },
+          {
+            "编号": "字006",
+            "别名": "LocalFont006",
+            "字重": 700,
+            "样式": "italic",
+            "文字": "Migo / NED Eric Lamp",
+            "加载": true
+          }
+        ],
+        "页面宽度": 1200,
+        "视口宽度": 1200,
+        "字体": [
+          {
+            "名称": "LocalFont005",
+            "状态": "loaded"
+          },
+          {
+            "名称": "LocalFont006",
+            "状态": "loaded"
+          }
+        ]
+      },
+      "脚本或加载错误": [],
+      "外部请求数": 0
+    }
+  ],
+  "浏览器": "154.0.8037.57",
+  "手机总览": {
+    "视口": "390×844",
+    "横向溢出": false,
+    "字体文件数": 6,
+    "截图": "临时核对截图，未入库"
+  }
+}
