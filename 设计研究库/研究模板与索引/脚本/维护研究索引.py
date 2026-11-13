@@ -24,7 +24,6 @@ CATEGORIES = {
 }
 STATUSES = ['待研究', '研究中', '待补充', '已完成', '已应用验证', '已搁置']
 AUTHOR_SUBTYPES = {'品牌案例', '角色与IP案例', '平面视觉案例', '设计方法专题'}
-COMPAT_MARKER = '<!-- 文档用途：兼容导航，不计为研究 -->'
 INDEX_TYPES = {'设计师索引.md': '设计师档案', '品牌案例索引.md': '品牌案例',
                'IP案例索引.md': '角色与IP案例', '网站案例索引.md': '网站案例',
                '视觉案例索引.md': '平面视觉案例', '电商案例索引.md': '电商案例',
@@ -86,9 +85,6 @@ def read_research(vocabulary):
             raise ValueError('分类缺少 README：'+folder)
         for path in sorted((BASE / folder).rglob('*.md')):
             if path.name == 'README.md':
-                continue
-            if (folder == '01_设计师档案' and path.parent == BASE/folder
-                    and path.read_text().startswith(COMPAT_MARKER)):
                 continue
             data, body = metadata(path, vocabulary)
             author_subdocument = (folder == '01_设计师档案'
