@@ -1,5 +1,5 @@
 {
-  "清单版本": 3,
+  "清单版本": 4,
   "更新日期": "2026-11-14",
   "说明": "仅为候选资源入库；未确认为Migo品牌资产。文件外部中文命名，二进制及SVG内容保持源版本原样。",
   "来源版本": {
@@ -10,6 +10,10 @@
     "图标": {
       "仓库": "lucide-icons/lucide",
       "提交": "55782beff3a0133df79c417eb68f96e8f19e2404"
+    },
+    "样机": {
+      "仓库": "picturepan2/devices.css",
+      "提交": "11846244977a4905a4fb9ac12bb2121e068d6147"
     }
   },
   "素材": [
@@ -95202,6 +95206,39 @@
       "画布": "0 0 24 24",
       "描边宽度": "2",
       "预览文件": "图标/全部图标预览/图标总览_09.png"
+    },
+    {
+      "编号": "样001",
+      "名称": "Devices.css设备样机样式包",
+      "分类": "样机",
+      "文件": "样机/Devices_CSS/设备样机.css",
+      "格式": "CSS",
+      "状态": "候选",
+      "作者或维护者": "Yan Zhu / picturepan2",
+      "原始文件名": "dist/devices.css",
+      "来源页面": "https://github.com/picturepan2/devices.css/blob/11846244977a4905a4fb9ac12bb2121e068d6147/dist/devices.css",
+      "下载链接": "https://raw.githubusercontent.com/picturepan2/devices.css/11846244977a4905a4fb9ac12bb2121e068d6147/dist/devices.css",
+      "来源提交": "11846244977a4905a4fb9ac12bb2121e068d6147",
+      "下载日期": "2026-11-14",
+      "文件字节数": 59293,
+      "SHA256": "0780a1fc02288a46d684ee16e57145845a9edc2de9842548f409ae152d700e0f",
+      "源GitBlobSHA1": "aaf7a3bf0c36141c074157e91dd34dbe30f749bd",
+      "许可证": "MIT（Yan Zhu原文）",
+      "许可证文件": "样机/Devices_CSS/样机许可证.txt",
+      "读取情况": "官方GitBlob及SHA256一致；CSS无外部资源；电脑、手机、平板三类加载与本地图片替换／重置通过；横向与纵向PNG已实际查看。",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "Migo个人作品集网站展示"
+      ],
+      "验证记录": [
+        {
+          "类型": "样机本地读取与替换检查",
+          "日期": "2026-11-14",
+          "记录文件": "样机/管理资料/样机检查记录.json",
+          "预览文件": "样机/全部样机预览.png",
+          "范围": "仅三种CSS设备示例，未做Photoshop或其他23类完整验证，不是项目采用。"
+        }
+      ]
     }
   ],
   "许可证原文": [
@@ -95229,6 +95266,11 @@
       "文件": "字体/Source_Serif_4/字体许可证.txt",
       "原始链接": "https://raw.githubusercontent.com/google/fonts/29b4ec6df2522a8aee279414b78a07910b065874/ofl/sourceserif4/OFL.txt",
       "SHA256": "5f94c3fd3a23131a417ab5a0c8452de57e70c3cfb9f604d88241f7065ebf9fd9"
+    },
+    {
+      "文件": "样机/Devices_CSS/样机许可证.txt",
+      "原始链接": "https://raw.githubusercontent.com/picturepan2/devices.css/11846244977a4905a4fb9ac12bb2121e068d6147/LICENSE",
+      "SHA256": "5a99ca58d0c68dd7b4df4ada6652c0bc00f430da0d13484d97d398fef2b002d8"
     }
   ],
   "既有工具引用": [
@@ -95464,6 +95506,36 @@
       "源包URL": "https://codeload.github.com/lucide-icons/lucide/tar.gz/55782beff3a0133df79c417eb68f96e8f19e2404",
       "源包SHA256": "036597a0be49bed61e832d74567fa01f8339645a4582beb565c38c7faeecc90f",
       "原件命名": "保留原有六枚中文文件及路径，其余沿用官方名称，按A-C、D-H、I-P、Q-Z分组。"
+    }
+  ],
+  "样机套装清单": [
+    {
+      "名称": "Devices.css",
+      "原件编号": "样001",
+      "格式说明": "纯CSS设备样机，不是PSD或智能对象文件。",
+      "源码CSS根类数": 23,
+      "验证范围": "仅验证下列三种设备，其他设备类未逐一验证。",
+      "展示模板": [
+        {
+          "id": "desktop",
+          "名称": "电脑屏幕",
+          "类名": "device-macbook-pro"
+        },
+        {
+          "id": "phone",
+          "名称": "手机屏幕",
+          "类名": "device-iphone-14"
+        },
+        {
+          "id": "tablet",
+          "名称": "平板屏幕",
+          "类名": "device-ipad-pro"
+        }
+      ],
+      "HTML": "样机/管理资料/样机预览.html",
+      "检查记录": "样机/管理资料/样机检查记录.json",
+      "总览PNG": "样机/全部样机预览.png",
+      "套装PNG": "样机/Devices_CSS/样机预览.png"
     }
   ]
 }

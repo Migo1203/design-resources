@@ -40,7 +40,7 @@ def check():
     for item in data['许可证原文']:
         if hashlib.sha256(inside(item['文件']).read_bytes()).hexdigest() != item['SHA256']:
             raise ValueError('许可证原文有变化：'+item['文件'])
-    actual = {str(p.relative_to(ROOT)) for folder in ['字体','图标'] for p in (ROOT/folder).rglob('*') if p.suffix.lower() in {'.ttf','.otf','.woff','.woff2','.svg'}}
+    actual = {str(p.relative_to(ROOT)) for folder in ['字体','图标','样机'] for p in (ROOT/folder).rglob('*') if p.suffix.lower() in {'.ttf','.otf','.woff','.woff2','.svg','.css','.psd','.psb'}}
     if actual != paths:
         raise ValueError('清单未覆盖实际原件：'+str(actual ^ paths))
     for item in data['既有工具引用']:
@@ -90,7 +90,21 @@ def check():
             if check['名称'] != '常用': rendered.extend(check['实际结果']['当前名称'])
         if len(rendered) != len(members) or set(rendered) != {x[:-4] for x in names}:
             raise ValueError('图标总览未逐页覆盖完整套装')
-    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标及全部预览；未修改任何状态。')
+    mockups = data.get('样机套装清单', [])
+    for pack in mockups:
+        source = next(x for x in data['素材'] if x['编号'] == pack['原件编号'])
+        if source['分类'] != '样机':
+            raise ValueError('样机原件分类不一致')
+        inside(pack['HTML'])
+        report = json.loads(inside(pack['检查记录']).read_text())
+        if len(report['设备']) != len(pack['展示模板']) or not all(x['图片可读'] for x in report['设备']):
+            raise ValueError('样机展示验证不完整')
+        for item in report['截图']:
+            if hashlib.sha256(inside(item['文件']).read_bytes()).hexdigest() != item['SHA256']:
+                raise ValueError('样机PNG与检查记录不一致')
+        if report['交互检查']['脚本或加载错误'] or report['交互检查']['外部请求数']:
+            raise ValueError('样机读取存在错误或外部请求')
+    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机及全部预览；未修改任何状态。')
 
 if __name__ == '__main__':
     check()
