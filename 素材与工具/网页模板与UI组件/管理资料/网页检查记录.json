@@ -1,0 +1,154 @@
+{
+  "日期": "2026-11-14",
+  "说明": "资源归档与隔离验证；没有改动Migo网站或品牌项目。",
+  "构建": {
+    "结果": "通过",
+    "Node": "v24.19.0",
+    "npm": "11.9.0",
+    "直接依赖版本": {
+      "@astrojs/mdx": "8.1.6",
+      "@tailwindcss/vite": "4.3.5",
+      "@types/canvas-confetti": "1.9.0",
+      "astro": "7.4.12",
+      "canvas-confetti": "1.9.4",
+      "tailwindcss": "4.3.5",
+      "vite": "8.3.8"
+    },
+    "锁文件SHA256": "820fc60961b84c07a391852105fcabf7c24441870bd636dea72f25e8269f1f0a",
+    "生成页面": [
+      "/",
+      "/markdown-page/",
+      "/components/"
+    ],
+    "安装方式": "npm install --ignore-scripts首次生成锁；复查或重现使用npm ci --ignore-scripts，依赖未入库",
+    "构建日志": "\n> @example/with-tailwindcss@0.0.1 build\n> astro build\n\n07:28:31 [types] Generated 45ms\n07:28:31 [build] output: \"static\"\n07:28:31 [build] mode: \"static\"\n07:28:31 [build] directory: /tmp/migo-web-kit/运行验证/dist/\n07:28:31 [build] Collecting build info...\n07:28:31 [build] ✓ Completed in 85ms.\n07:28:31 [build] Building static entrypoints...\n07:28:31 [vite] ✓ built in 398ms\n07:28:31 [vite] ✓ built in 28ms\n07:28:31 [build] Rearranging server assets...\n\n generating static routes \n07:28:31   ├─ /components/index.html (+13ms) \n07:28:31   ├─ /markdown-page/index.html (+4ms) \n07:28:31   ├─ /index.html (+3ms) \n07:28:31 ✓ Completed in 35ms.\n\n07:28:31 [build] ✓ Completed in 512ms.\n07:28:31 [build] 3 page(s) built in 599ms\n07:28:31 [build] Complete!\n",
+    "锁定重建": "已实际npm ci --ignore-scripts，再执行npm run build通过；直接依赖版本与原浏览器检查一致",
+    "锁定重建日志": "\n> @example/with-tailwindcss@0.0.1 build\n> astro build\n\n07:32:03 [types] Generated 125ms\n07:32:03 [build] output: \"static\"\n07:32:03 [build] mode: \"static\"\n07:32:03 [build] directory: /tmp/migo-web-kit/运行验证/dist/\n07:32:03 [build] Collecting build info...\n07:32:03 [build] ✓ Completed in 164ms.\n07:32:03 [build] Building static entrypoints...\n07:32:04 [vite] ✓ built in 431ms\n07:32:04 [vite] ✓ built in 22ms\n07:32:04 [build] Rearranging server assets...\n\n generating static routes \n07:32:04   ├─ /components/index.html (+11ms) \n07:32:04   ├─ /markdown-page/index.html (+3ms) \n07:32:04   ├─ /index.html (+2ms) \n07:32:04 ✓ Completed in 30ms.\n\n07:32:04 [build] ✓ Completed in 526ms.\n07:32:04 [build] 3 page(s) built in 692ms\n07:32:04 [build] Complete!\n"
+  },
+  "验证页面SHA256": {
+    "组件验证页": "7a69fd9cf6ff6ca7aa62740f9828d535d54c81ab9010bc451d0a6441780b5ad6",
+    "Pico验证页": "75fc02687d189ca363c33d19070d0d37ad60f007ae5ed6cb5a88cdd7d1affec4"
+  },
+  "截图": [
+    {
+      "套装": "Astro Tailwind官方示例",
+      "设备": "桌面",
+      "文件": "网页模板与UI组件/Astro_Tailwind示例/桌面预览.png",
+      "SHA256": "3c3c21a5296815a68362ea7fad91fb1b6fad2a4b3cf089315618bd47dde776b3",
+      "宽度": 1440,
+      "高度": 1000,
+      "无横向溢出": true,
+      "类型": "实际构建页面"
+    },
+    {
+      "套装": "Astro Tailwind官方示例",
+      "设备": "手机",
+      "文件": "网页模板与UI组件/Astro_Tailwind示例/手机预览.png",
+      "SHA256": "672d6c67e8dad32cac60b9653ec06fd3f65f24358a48d250324296bab522d584",
+      "宽度": 390,
+      "高度": 844,
+      "无横向溢出": true,
+      "类型": "实际构建页面"
+    },
+    {
+      "套装": "Astro作品集基础组件",
+      "设备": "桌面",
+      "文件": "网页模板与UI组件/Astro_作品集组件/桌面预览.png",
+      "SHA256": "2c545487c50bf33e801e36548847f4d7bc973e86201f8bd1b1a9a52336e9837b",
+      "宽度": 1440,
+      "高度": 1000,
+      "无横向溢出": true,
+      "类型": "实际构建页面"
+    },
+    {
+      "套装": "Astro作品集基础组件",
+      "设备": "手机",
+      "文件": "网页模板与UI组件/Astro_作品集组件/手机预览.png",
+      "SHA256": "5a749a9674ba65805eb767740bd8dc681bf4cfed5724cc89e6b113bae7d877a2",
+      "宽度": 390,
+      "高度": 844,
+      "无横向溢出": true,
+      "类型": "实际构建页面"
+    },
+    {
+      "套装": "Pico CSS基础组件",
+      "设备": "桌面",
+      "文件": "网页模板与UI组件/Pico_CSS基础组件/桌面预览.png",
+      "SHA256": "908005c2c4d012265cf146794244247f74c4a66ab9ede7cfc21c545b0ef868cd",
+      "宽度": 1440,
+      "高度": 1000,
+      "无横向溢出": true,
+      "类型": "本库语义HTML＋官方CSS验证页"
+    },
+    {
+      "套装": "Pico CSS基础组件",
+      "设备": "手机",
+      "文件": "网页模板与UI组件/Pico_CSS基础组件/手机预览.png",
+      "SHA256": "39f7cfa57ce5a756573f13016a464fa5c2a4c349ccd4bdb81362e414263af02d",
+      "宽度": 390,
+      "高度": 844,
+      "无横向溢出": true,
+      "类型": "本库语义HTML＋官方CSS验证页"
+    },
+    {
+      "套装": "全部",
+      "设备": "总览",
+      "文件": "网页模板与UI组件/全部资源预览.png",
+      "SHA256": "7e9983760d9acb98766673aba0713c9d80b084298a2cdbe98c238a2704ad9d03",
+      "六张本地截图读取": true
+    }
+  ],
+  "交互检查": {
+    "Astro示例": {
+      "首页与Markdown互返": "通过",
+      "Tab与Enter触发源按钮": "通过，实际生成canvas",
+      "减少动态效果时仍生成彩纸canvas": true,
+      "限制": "源按钮用全局首个button且confetti()未传减少动效参数，不能直接视为适合多实例或生产动效的组件"
+    },
+    "作品集组件": [
+      {
+        "设备": "桌面",
+        "默认列数": 2,
+        "错位首项": "matrix(1, 0, 0, 1, 0, 120)",
+        "紧凑布局": "flex",
+        "紧凑末项起列": "1",
+        "紧凑末项终列": "3",
+        "标题字号": "48px"
+      },
+      {
+        "设备": "手机",
+        "默认列数": 1,
+        "错位首项": "none",
+        "紧凑布局": "grid",
+        "紧凑末项起列": "1",
+        "紧凑末项终列": "3",
+        "标题字号": "32px"
+      }
+    ],
+    "Pico验证页": {
+      "主题切换": "通过，实际根背景变化",
+      "按钮键盘反馈": "通过",
+      "原生折叠": "通过",
+      "无效邮箱拒绝／有效输入反馈": "通过；无发送与保存",
+      "原生对话框Escape／按钮关闭与焦点返回": "通过",
+      "行为来源": "Pico负责样式；折叠与验证依赖浏览器，开关和反馈脚本为本库编写"
+    }
+  },
+  "人工查看": {
+    "日期": "2026-11-14",
+    "文件": [
+      "网页模板与UI组件/Astro_Tailwind示例/桌面预览.png",
+      "网页模板与UI组件/Astro_Tailwind示例/手机预览.png",
+      "网页模板与UI组件/Astro_作品集组件/桌面预览.png",
+      "网页模板与UI组件/Astro_作品集组件/手机预览.png",
+      "网页模板与UI组件/Pico_CSS基础组件/桌面预览.png",
+      "网页模板与UI组件/Pico_CSS基础组件/手机预览.png",
+      "网页模板与UI组件/全部资源预览.png"
+    ],
+    "范围": "已逐张打开六张实际桌面／手机PNG及总览，查看按钮示例、三种网格、Pico表单与对话框入口；不是全部状态截图、真实设备或完整无障碍审计。"
+  },
+  "浏览器": "154.0.8037.57",
+  "脚本或加载错误": [],
+  "外部网络请求数": 0,
+  "HTTP错误": []
+}

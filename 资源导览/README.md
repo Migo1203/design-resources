@@ -24,6 +24,8 @@
 
 配色批次已入库[Open Color与Nord](../素材与工具/配色资源/README.md)：7个官方ASE／GPL／CSS／JSON文件，原件约29.26 KB，各有MIT原文、固定来源与PNG预览。核心146色，Open Color代码另外带黑白2色；不是Migo品牌色定稿。原目录的在线配色工具仍只作入口，不将用户上传色板一并下载。
 
+网页资源批次已归档[Astro示例、作品集组件与Pico CSS](../素材与工具/网页模板与UI组件/README.md)：14个官方源码原件，约89.89 KB，三套分别保留MIT声明，附真实构建／运行的桌面与手机PNG。验证代码、依赖与构建记录集中管理，没有把依赖包、原作者照片或Migo网站代码混入素材数量。
+
 ## 用户补充的设计参考网站
 
 [设计参考网站](设计参考网站.md)：2026-11-13收录The Branding Journal、Logopond、Appinspo（用户已确认原输入`applnsop`所指网站）和AppFuel，按品牌策略、Logo、App视觉与UX分类，记录原始链接、用途和实际访问范围。AppFuel首页已转向广告／内容创意，另保留Screens与Tricks资料入口。

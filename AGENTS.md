@@ -49,3 +49,5 @@
 - 摄影／材质批次：先查`素材与工具/整理进度.md`，当前新增两张Commons历史CC0完整摄影JPEG、四张Poly Haven官方2K JPEG颜色贴图，均未采用。摄影按具体文件页固定修订及原图SHA1核实，不泛化当前Unsplash全站许可；不得将素材写成Migo本人摄影或工作室。Poly Haven记录files_hash、通道、官方MD5和本地SHA256，不把单张颜色图称为完整PBR材质。来源为官方API时使用可识别的User-Agent并遵守服务条款，预览只引用本地文件。Photoshop PSD尚未取得，403及许可矛盾只留候选，不冒称已下载或智能对象测试。`生成摄影材质预览.py`仅读取本地清单，生成PNG、管理HTML和检查JSON；人工查看记录与自动加载分开。后续类别按进度表依次维护，不建空目录、不批量下载或安装。
 
 - 配色批次：先读`素材与工具/配色资源/README.md`。当前Open Color 1.9.1与Nord 0.2.1共7个官方原件，均为未采用候选并分别保留MIT版权；GPL在此为GIMP色板格式，不能误称GNU GPL授权。Open Color ASE／GPL各130色，CSS／JSON各132色（额外黑白），Nord各格式16色，不修改原件消除差异。源JSON集中在管理资料，ASE／GPL／CSS留在套装原件目录；预览由实际本地CSS变量生成。`生成配色预览.py`解析RGB ASE、GPL、CSS及JSON，校验脚本复用其纯标准库解析部分；生成PNG才需要Playwright与Chromium。跨格式一致与浏览器可读不等于Photoshop／Illustrator／GIMP已导入、不等于印刷校准或网页完整无障碍验收。不得将候选直接写入品牌规范或网站项目。
+
+- 网页资源批次：先读`素材与工具/网页模板与UI组件/README.md`。当前一个Astro＋Tailwind官方示例10文件、Hero／Grid／Pill三个官方Astro组件、一份Pico CSS，共14个原件、三套MIT声明。源文件保留原始内容、功能文件名和目录；验证页、临时字号／颜色变量、本地操作脚本归管理资料，不冒称官方模板或Migo UI。`生成网页资源预览.py`按锁文件在临时目录构建、实际截图与检查，不在本仓库或Migo网站安装依赖，不提交node_modules和dist。Pico负责样式，折叠、校验和dialog属于浏览器能力，开关脚本为本库所写。Astro按钮使用全局首个button，减少动态效果时仍生成canvas，采用前需处理；不得把局部测试当作完整无障碍、TypeScript类型检查、真实设备或网站性能验收。所有素材仍未采用，不能因归档直接改变网站选型或品牌定义。

@@ -1,0 +1,22 @@
+---
+// 本库编写的验证页面；被导入的三个组件保持官方原件不变。
+import Hero from '../components/archive/Hero.astro';
+import Grid from '../components/archive/Grid.astro';
+import Pill from '../components/archive/Pill.astro';
+const items = ['样例卡片 A', '样例卡片 B', '样例卡片 C'];
+---
+<html lang="zh-CN">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Astro官方组件验证</title></head>
+<body><main>
+<p class="note">源码候选／未采用 · 本库验证页面 · 临时中性色与文字，不是Migo网站UI</p>
+<Hero title="Hero／Grid／Pill" tagline="官方作品集组件的独立组合检查" align="start"><div class="pills"><Pill>组件样例</Pill><Pill>未接入项目</Pill></div></Hero>
+<section id="default"><h2>默认网格</h2><Grid>{items.map(item=><li><strong>{item}</strong><p>仅验证插槽、布局和响应式，不包含真实作品。</p></li>)}</Grid></section>
+<section id="offset"><h2>错位网格 offset</h2><Grid variant="offset">{items.map(item=><li><strong>{item}</strong><p>桌面查看位移，手机恢复普通排列。</p></li>)}</Grid></section>
+<section id="small"><h2>紧凑网格 small</h2><Grid variant="small">{items.map(item=><li><strong>{item}</strong><p>三项内容，用于验证末项处理。</p></li>)}</Grid></section>
+<footer>组件来源：withastro/astro，MIT。字号、间距与色彩变量由本验证页临时补齐；未复制官方作品集照片或人物资料。</footer>
+</main></body></html>
+<style is:global>
+/* 仅用于本次组件验证，补齐原组件依赖的少量全局变量与布局类。 */
+:root{--text-md:1rem;--text-lg:1.125rem;--text-xl:1.25rem;--text-3xl:2rem;--text-5xl:3rem;--gray-0:#242424;--accent-text-over:#242424;--accent-regular:#e5e5de;font:16px/1.6 system-ui,sans-serif;color:#242424;background:#f3f3ef}
+*{box-sizing:border-box}body{margin:0}main{max-width:1180px;padding:32px;margin:auto}.stack{display:flex;flex-direction:column}.gap-4{gap:1rem}.gap-2{gap:.5rem}.pills{display:flex;gap:.75rem;flex-wrap:wrap}.note,footer{font-size:13px;color:#555}section{margin:36px 0}h2{font-size:21px}li{min-width:0;background:white;border:1px solid #ccc;padding:24px}li p{color:#555}footer{margin-top:32px}@media(max-width:600px){main{padding:20px 14px}li{padding:16px}}
+</style>

@@ -49,6 +49,7 @@ def check():
     actual |= {str(p.relative_to(ROOT)) for folder in ['摄影图片','材质与纹理'] for p in (ROOT/folder).glob('*/原件/*') if p.is_file()}
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'配色资源').glob('*/原件/*') if p.is_file()}
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'配色资源/管理资料/源数据').glob('*') if p.is_file()}
+    actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'网页模板与UI组件').glob('*/原件/**/*') if p.is_file()}
     if actual != paths:
         raise ValueError('清单未覆盖实际原件：'+str(actual ^ paths))
     for item in data['既有工具引用']:
@@ -190,7 +191,34 @@ def check():
         interaction = report['交互检查']
         if interaction['脚本或加载错误'] or interaction['外部请求数'] or interaction['390px横向溢出']:
             raise ValueError('配色预览存在读取或布局错误')
-    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画、{len(image_packs)}套摄影／材质、{len(palettes)}套配色及全部预览；未修改任何状态。')
+    web_packs = data.get('网页套装清单', [])
+    if web_packs:
+        for pack in web_packs:
+            members = sorted([x for x in data['素材'] if x.get('套装') == pack['名称']], key=lambda x:x['文件'])
+            listing = '\n'.join(x['文件']+'\t'+x['SHA256'] for x in members)
+            if len(members)!=pack['原件数'] or set(x['编号'] for x in members)!=set(pack['原件编号']) or sum(x['文件字节数'] for x in members)!=pack['原件总字节数'] or hashlib.sha256(listing.encode()).hexdigest()!=pack['原件集合SHA256']:
+                raise ValueError('网页套装范围或原件集合不一致：'+pack['名称'])
+            for key in ['许可证文件','说明文件','桌面预览','手机预览']:
+                inside(pack[key])
+        meta = data['网页验证资料']
+        inside(meta['HTML'])
+        report = json.loads(inside(meta['检查记录']).read_text())
+        if report['构建']['结果']!='通过' or hashlib.sha256(inside(meta['依赖锁文件']).read_bytes()).hexdigest()!=report['构建']['锁文件SHA256']:
+            raise ValueError('网页构建记录或依赖锁文件不一致')
+        for key, value in report['验证页面SHA256'].items():
+            if hashlib.sha256(inside(meta[key]).read_bytes()).hexdigest()!=value:
+                raise ValueError('网页验证页面与检查记录不一致')
+        expected = {p[k] for p in web_packs for k in ['桌面预览','手机预览']} | {meta['总览PNG']}
+        if {x['文件'] for x in report['截图']}!=expected:
+            raise ValueError('网页截图未覆盖全部桌面、手机与总览')
+        for shot in report['截图']:
+            if hashlib.sha256(inside(shot['文件']).read_bytes()).hexdigest()!=shot['SHA256']:
+                raise ValueError('网页预览PNG与检查记录不一致')
+            if shot['设备']!='总览' and not shot['无横向溢出']:
+                raise ValueError('网页验证存在横向溢出')
+        if report['脚本或加载错误'] or report['外部网络请求数'] or report['HTTP错误']:
+            raise ValueError('网页验证存在加载或外部请求错误')
+    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画、{len(image_packs)}套摄影／材质、{len(palettes)}套配色、{len(web_packs)}套网页资源及全部预览；未修改任何状态。')
 
 if __name__ == '__main__':
     check()
