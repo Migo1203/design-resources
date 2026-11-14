@@ -51,6 +51,7 @@ def check():
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'配色资源/管理资料/源数据').glob('*') if p.is_file()}
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'网页模板与UI组件').glob('*/原件/**/*') if p.is_file()}
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'交互与动效资源').glob('*/原件/*') if p.is_file()}
+    actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'音乐与音效').glob('*/原件/*') if p.is_file()}
     if actual != paths:
         raise ValueError('清单未覆盖实际原件：'+str(actual ^ paths))
     for item in data['既有工具引用']:
@@ -247,7 +248,54 @@ def check():
             if not reduced[key]: raise ValueError('减少动效检查未通过：'+key)
         if report['脚本或加载错误'] or report['外部网络请求数'] or report['HTTP错误']:
             raise ValueError('动效验证存在加载或外部请求错误')
-    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画、{len(image_packs)}套摄影／材质、{len(palettes)}套配色、{len(web_packs)}套网页资源、{len(motion_packs)}套动效资源及全部预览；未修改任何状态。')
+    audio_packs = data.get('音乐套装清单', [])
+    if audio_packs:
+        expected_ids = set()
+        for pack in audio_packs:
+            members = sorted([x for x in data['素材'] if x.get('套装') == pack['名称']], key=lambda x:x['文件'])
+            listing = '\n'.join(x['文件']+'\t'+x['SHA256'] for x in members)
+            if len(members)!=pack['原件数'] or {x['编号'] for x in members}!=set(pack['原件编号']) or sum(x['文件字节数'] for x in members)!=pack['原件总字节数'] or hashlib.sha256(listing.encode()).hexdigest()!=pack['原件集合SHA256']:
+                raise ValueError('音频套装范围或原件集合不一致：'+pack['名称'])
+            if hashlib.sha256(pack['许可声明原文'].encode()).hexdigest()!=pack['许可声明原文字节SHA256']:
+                raise ValueError('作者音频许可声明与字节哈希不一致')
+            for key in ['说明文件','许可证文件','预览图']:
+                inside(pack[key])
+            expected_ids.update(pack['原件编号'])
+        meta=data['音乐管理资料']
+        report=json.loads(inside(meta['检查记录']).read_text())
+        if hashlib.sha256(inside(meta['HTML']).read_bytes()).hexdigest()!=report['HTML_SHA256']:
+            raise ValueError('音频试听HTML与检查记录不一致')
+        expected_images={p['预览图'] for p in audio_packs}|{meta['总览PNG'],'音乐与音效/管理资料/手机试听预览.png'}
+        if {x['文件'] for x in report['截图']}!=expected_images:
+            raise ValueError('音频波形截图未覆盖全部套装与桌面、手机')
+        for shot in report['截图']:
+            if hashlib.sha256(inside(shot['文件']).read_bytes()).hexdigest()!=shot['SHA256'] or not shot['无横向溢出']:
+                raise ValueError('音频预览PNG或布局检查不符')
+        for key in ['原件读取','浏览器解码','用户手势播放']:
+            if len(report[key])!=len(expected_ids) or {x['编号'] for x in report[key]}!=expected_ids:
+                raise ValueError('音频技术记录未覆盖所有原件：'+key)
+        originals={x['编号']:x for x in data['素材'] if x['编号'] in expected_ids}
+        for item in report['原件读取']:
+            original=originals[item['编号']]
+            if not item['FFmpeg完整解码'] or item['原件SHA256']!=original['SHA256'] or item['结构']!=original['音频结构']:
+                raise ValueError('音频原件读取记录不符')
+        for item in report['用户手势播放']:
+            if not item['playing'] or item['媒体错误'] or item['播放位置秒']<=0:
+                raise ValueError('音频用户手势播放未通过')
+        if not report['初始无自动播放'] or not report['同时仅播放一项'] or report['脚本或加载错误'] or report['外部请求'] or report['HTTP错误']:
+            raise ValueError('音频交互或加载检查未通过')
+    local_tools=data.get('本库工具清单', [])
+    if local_tools:
+        proof=json.loads(inside('工具/管理资料/工具检查记录.json').read_text())
+        for tool in local_tools:
+            if hashlib.sha256(inside(tool['文件']).read_bytes()).hexdigest()!=tool['SHA256'] or proof['本库脚本SHA256'].get(tool['文件'])!=tool['SHA256']:
+                raise ValueError('本库工具与检查版本不一致：'+tool['名称'])
+            inside(tool['说明文件'])
+        for key in ['输入哈希未变','透明与尺寸断言','白底JPEG断言','RGB_ICC处理断言','EXIF纠正与不放大','重名拒绝与旧输出保护','CMYK预检拒绝']:
+            if not proof[key]: raise ValueError('交付工具技术检查未通过：'+key)
+        if not proof['检索检查']['清单哈希未变']:
+            raise ValueError('检索工具不满足只读检查')
+    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画、{len(image_packs)}套摄影／材质、{len(palettes)}套配色、{len(web_packs)}套网页资源、{len(motion_packs)}套动效、{len(audio_packs)}套音频、{len(local_tools)}份本库工具及全部预览；未修改任何状态。')
 
 if __name__ == '__main__':
     check()
