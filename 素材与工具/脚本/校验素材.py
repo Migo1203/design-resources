@@ -47,6 +47,8 @@ def check():
     actual = {str(p.relative_to(ROOT)) for folder in ['字体','图标','样机'] for p in (ROOT/folder).rglob('*') if p.suffix.lower() in {'.ttf','.otf','.woff','.woff2','.svg','.css','.psd','.psb'}}
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'插画与矢量图').glob('*/原件/*') if p.is_file()}
     actual |= {str(p.relative_to(ROOT)) for folder in ['摄影图片','材质与纹理'] for p in (ROOT/folder).glob('*/原件/*') if p.is_file()}
+    actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'配色资源').glob('*/原件/*') if p.is_file()}
+    actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'配色资源/管理资料/源数据').glob('*') if p.is_file()}
     if actual != paths:
         raise ValueError('清单未覆盖实际原件：'+str(actual ^ paths))
     for item in data['既有工具引用']:
@@ -160,7 +162,35 @@ def check():
         interaction = report['交互检查']
         if interaction['脚本或加载错误'] or interaction['外部请求数'] or interaction['390px横向溢出']:
             raise ValueError('摄影／材质预览存在加载或布局错误')
-    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画、{len(image_packs)}套摄影／材质及全部预览；未修改任何状态。')
+    palettes = data.get('配色套装清单', [])
+    if palettes:
+        from 生成配色预览 import validate_pack
+        rendered = {}
+        for pack in palettes:
+            members = sorted([x for x in data['素材'] if x.get('套装') == pack['名称']], key=lambda x:x['文件'])
+            listing = '\n'.join(x['文件']+'\t'+x['SHA256'] for x in members)
+            if len(members)!=pack['原件数'] or set(x['编号'] for x in members)!=set(pack['原件编号']) or sum(x['文件字节数'] for x in members)!=pack['原件总字节数'] or hashlib.sha256(listing.encode()).hexdigest()!=pack['原件集合SHA256']:
+                raise ValueError('配色套装范围或原件集合不一致：'+pack['名称'])
+            for key in ['许可证文件','说明文件','预览图']:
+                inside(pack[key])
+            _,display = validate_pack(pack,data['素材'])
+            rendered[pack['名称']] = [x['hex'] for x in display]
+        management = data['配色管理资料']
+        inside(management['HTML'])
+        report = json.loads(inside(management['检查记录']).read_text())
+        expected = {x['预览图'] for x in palettes} | {management['总览PNG']}
+        if {x['文件'] for x in report['截图']}!=expected:
+            raise ValueError('配色预览未覆盖两套与总览')
+        for shot in report['截图']:
+            if hashlib.sha256(inside(shot['文件']).read_bytes()).hexdigest()!=shot['SHA256']:
+                raise ValueError('配色PNG与检查记录不一致')
+            colors = [c for group in rendered.values() for c in group] if shot['名称']=='全部' else rendered[shot['名称']]
+            if shot['展示色值']!=colors or not shot['CSS实际颜色逐项一致']:
+                raise ValueError('配色预览未按源色值完整渲染')
+        interaction = report['交互检查']
+        if interaction['脚本或加载错误'] or interaction['外部请求数'] or interaction['390px横向溢出']:
+            raise ValueError('配色预览存在读取或布局错误')
+    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画、{len(image_packs)}套摄影／材质、{len(palettes)}套配色及全部预览；未修改任何状态。')
 
 if __name__ == '__main__':
     check()

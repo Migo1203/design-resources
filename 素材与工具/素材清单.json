@@ -1,5 +1,5 @@
 {
-  "清单版本": 6,
+  "清单版本": 7,
   "更新日期": "2026-11-14",
   "说明": "仅为候选资源入库；未确认为Migo品牌资产。文件外部中文命名，二进制及SVG内容保持源版本原样。",
   "来源版本": {
@@ -100148,6 +100148,202 @@
       "下载分辨率": "2k",
       "贴图通道": "Diffuse",
       "处理说明": "仅下载官方2K JPEG颜色／漫反射贴图，原件未改；不包含法线、粗糙度、置换、模型或完整PBR套装。"
+    },
+    {
+      "编号": "色001",
+      "名称": "Open Color ASE",
+      "分类": "配色资源",
+      "套装": "Open Color",
+      "文件": "配色资源/Open_Color/原件/色板.ase",
+      "格式": "ASE",
+      "状态": "候选",
+      "作者或维护者": "Jeong Heeyeun / heeyeun",
+      "原始文件名": "docs/asset/download/open-color_1.9.1.ase",
+      "来源页面": "https://github.com/yeun/open-color",
+      "来源提交": "3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3",
+      "来源版本": "1.9.1",
+      "下载链接": "https://raw.githubusercontent.com/yeun/open-color/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/docs/asset/download/open-color_1.9.1.ase",
+      "下载日期": "2026-11-14",
+      "文件字节数": 7732,
+      "SHA256": "82b21d385ad27616ebc1e7f1dbf657b91302b8f8a7f1ab85315ab8b84c2f8ed2",
+      "源GitBlobSHA1": "6406ec358cd2e494f0e40800237cfa29b28f5263",
+      "许可证": "MIT",
+      "许可证文件": "配色资源/Open_Color/配色许可证.txt",
+      "读取情况": "官方Git blob及SHA256通过；ASE／GPL／CSS／JSON解析及色值核对通过；CSS浏览器实际渲染通过，已人工查看总览；未测试设计软件导入",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用配色探索"
+      ],
+      "验证记录": [],
+      "预览文件": "配色资源/Open_Color/配色预览.png"
+    },
+    {
+      "编号": "色002",
+      "名称": "Open Color GPL",
+      "分类": "配色资源",
+      "套装": "Open Color",
+      "文件": "配色资源/Open_Color/原件/色板.gpl",
+      "格式": "GPL",
+      "状态": "候选",
+      "作者或维护者": "Jeong Heeyeun / heeyeun",
+      "原始文件名": "docs/asset/download/open-color_1.9.1.gpl",
+      "来源页面": "https://github.com/yeun/open-color",
+      "来源提交": "3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3",
+      "来源版本": "1.9.1",
+      "下载链接": "https://raw.githubusercontent.com/yeun/open-color/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/docs/asset/download/open-color_1.9.1.gpl",
+      "下载日期": "2026-11-14",
+      "文件字节数": 3298,
+      "SHA256": "8915d1f8f930f98aad4997d93c137602b4762de8531e0f0b54650408c01990a1",
+      "源GitBlobSHA1": "c4e898df92572eeb2611cbd5c67004ca2fc3e0e5",
+      "许可证": "MIT",
+      "许可证文件": "配色资源/Open_Color/配色许可证.txt",
+      "读取情况": "官方Git blob及SHA256通过；ASE／GPL／CSS／JSON解析及色值核对通过；CSS浏览器实际渲染通过，已人工查看总览；未测试设计软件导入",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用配色探索"
+      ],
+      "验证记录": [],
+      "预览文件": "配色资源/Open_Color/配色预览.png"
+    },
+    {
+      "编号": "色003",
+      "名称": "Open Color CSS",
+      "分类": "配色资源",
+      "套装": "Open Color",
+      "文件": "配色资源/Open_Color/原件/色彩变量.css",
+      "格式": "CSS",
+      "状态": "候选",
+      "作者或维护者": "Jeong Heeyeun / heeyeun",
+      "原始文件名": "open-color.css",
+      "来源页面": "https://github.com/yeun/open-color",
+      "来源提交": "3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3",
+      "来源版本": "1.9.1",
+      "下载链接": "https://raw.githubusercontent.com/yeun/open-color/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/open-color.css",
+      "下载日期": "2026-11-14",
+      "文件字节数": 9663,
+      "SHA256": "7ea49aec2547e5b7ae21ec7600c1eebb2bd196354e328d771b041eeeeac987e1",
+      "源GitBlobSHA1": "2457525df7acc5286ff81f946160e3dabec4cd67",
+      "许可证": "MIT",
+      "许可证文件": "配色资源/Open_Color/配色许可证.txt",
+      "读取情况": "官方Git blob及SHA256通过；ASE／GPL／CSS／JSON解析及色值核对通过；CSS浏览器实际渲染通过，已人工查看总览；未测试设计软件导入",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用配色探索"
+      ],
+      "验证记录": [],
+      "预览文件": "配色资源/Open_Color/配色预览.png"
+    },
+    {
+      "编号": "色004",
+      "名称": "Open Color JSON",
+      "分类": "配色资源",
+      "套装": "Open Color",
+      "文件": "配色资源/管理资料/源数据/open-color.json",
+      "格式": "JSON",
+      "状态": "候选",
+      "作者或维护者": "Jeong Heeyeun / heeyeun",
+      "原始文件名": "open-color.json",
+      "来源页面": "https://github.com/yeun/open-color",
+      "来源提交": "3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3",
+      "来源版本": "1.9.1",
+      "下载链接": "https://raw.githubusercontent.com/yeun/open-color/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/open-color.json",
+      "下载日期": "2026-11-14",
+      "文件字节数": 2213,
+      "SHA256": "fdf2f910ba6dc9c907a46274ea74668813e65d6a5707f03167368bd3a671eb98",
+      "源GitBlobSHA1": "874db02e79673aac7ba4314db7cb2730685be4fe",
+      "许可证": "MIT",
+      "许可证文件": "配色资源/Open_Color/配色许可证.txt",
+      "读取情况": "官方Git blob及SHA256通过；ASE／GPL／CSS／JSON解析及色值核对通过；CSS浏览器实际渲染通过，已人工查看总览；未测试设计软件导入",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用配色探索"
+      ],
+      "验证记录": [],
+      "预览文件": "配色资源/Open_Color/配色预览.png"
+    },
+    {
+      "编号": "色005",
+      "名称": "Nord ASE",
+      "分类": "配色资源",
+      "套装": "Nord",
+      "文件": "配色资源/Nord/原件/色板.ase",
+      "格式": "ASE",
+      "状态": "候选",
+      "作者或维护者": "Sven Greb / Nord",
+      "原始文件名": "src/swatches/nord.ase",
+      "来源页面": "https://github.com/nordtheme/nord",
+      "来源提交": "1cef71605416a222e57225b544540ce0fcec18d4",
+      "来源版本": "0.2.1",
+      "下载链接": "https://raw.githubusercontent.com/nordtheme/nord/1cef71605416a222e57225b544540ce0fcec18d4/src/swatches/nord.ase",
+      "下载日期": "2026-11-14",
+      "文件字节数": 656,
+      "SHA256": "bcb634f493c61e5bc609a2066a2c006a810e532fbb86c68b915da41e5d356676",
+      "源GitBlobSHA1": "4efa27728e888aa74678f05086a95368e4211ec6",
+      "许可证": "MIT",
+      "许可证文件": "配色资源/Nord/配色许可证.txt",
+      "读取情况": "官方Git blob及SHA256通过；ASE／GPL／CSS／JSON解析及色值核对通过；CSS浏览器实际渲染通过，已人工查看总览；未测试设计软件导入",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用配色探索"
+      ],
+      "验证记录": [],
+      "预览文件": "配色资源/Nord/配色预览.png"
+    },
+    {
+      "编号": "色006",
+      "名称": "Nord GPL",
+      "分类": "配色资源",
+      "套装": "Nord",
+      "文件": "配色资源/Nord/原件/色板.gpl",
+      "格式": "GPL",
+      "状态": "候选",
+      "作者或维护者": "Sven Greb / Nord",
+      "原始文件名": "src/swatches/nord.gpl",
+      "来源页面": "https://github.com/nordtheme/nord",
+      "来源提交": "1cef71605416a222e57225b544540ce0fcec18d4",
+      "来源版本": "0.2.1",
+      "下载链接": "https://raw.githubusercontent.com/nordtheme/nord/1cef71605416a222e57225b544540ce0fcec18d4/src/swatches/nord.gpl",
+      "下载日期": "2026-11-14",
+      "文件字节数": 318,
+      "SHA256": "03977779e33941b408867b7e680481e70a6371177b027c891933230121d59594",
+      "源GitBlobSHA1": "addfe14ddacd40856a928dae083f01bf4b3c38cc",
+      "许可证": "MIT",
+      "许可证文件": "配色资源/Nord/配色许可证.txt",
+      "读取情况": "官方Git blob及SHA256通过；ASE／GPL／CSS／JSON解析及色值核对通过；CSS浏览器实际渲染通过，已人工查看总览；未测试设计软件导入",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用配色探索"
+      ],
+      "验证记录": [],
+      "预览文件": "配色资源/Nord/配色预览.png"
+    },
+    {
+      "编号": "色007",
+      "名称": "Nord CSS",
+      "分类": "配色资源",
+      "套装": "Nord",
+      "文件": "配色资源/Nord/原件/色彩变量.css",
+      "格式": "CSS",
+      "状态": "候选",
+      "作者或维护者": "Sven Greb / Nord",
+      "原始文件名": "src/nord.css",
+      "来源页面": "https://github.com/nordtheme/nord",
+      "来源提交": "1cef71605416a222e57225b544540ce0fcec18d4",
+      "来源版本": "0.2.1",
+      "下载链接": "https://raw.githubusercontent.com/nordtheme/nord/1cef71605416a222e57225b544540ce0fcec18d4/src/nord.css",
+      "下载日期": "2026-11-14",
+      "文件字节数": 5380,
+      "SHA256": "b931ac3732582b2066b2d6cadec02d9820ba7081e6e3e404c31cb62d9315a962",
+      "源GitBlobSHA1": "e492c4f2a717544c5414d0241601663e70b93d84",
+      "许可证": "MIT",
+      "许可证文件": "配色资源/Nord/配色许可证.txt",
+      "读取情况": "官方Git blob及SHA256通过；ASE／GPL／CSS／JSON解析及色值核对通过；CSS浏览器实际渲染通过，已人工查看总览；未测试设计软件导入",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用配色探索"
+      ],
+      "验证记录": [],
+      "预览文件": "配色资源/Nord/配色预览.png"
     }
   ],
   "许可证原文": [
@@ -100209,6 +100405,18 @@
       "许可证": "CC0 1.0",
       "来源": "https://raw.githubusercontent.com/spdx/license-list-data/31846481de7ea17d92f2f46fad76abe58b2e9bb0/text/CC0-1.0.txt",
       "说明": "许可法律文本镜像；具体作品授权依据是素材记录中的来源页面。"
+    },
+    {
+      "文件": "配色资源/Open_Color/配色许可证.txt",
+      "SHA256": "62f1f7f590dd772b61fe8e07eff8c52de11d545f3ba079bc25b38a82a6ea4bae",
+      "许可证": "MIT",
+      "来源": "https://raw.githubusercontent.com/yeun/open-color/3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3/LICENSE"
+    },
+    {
+      "文件": "配色资源/Nord/配色许可证.txt",
+      "SHA256": "25ac8188d670bd2ad2ce2f4f55ab88573010ee9f7a4502543cb1eea1e2274f8a",
+      "许可证": "MIT",
+      "来源": "https://raw.githubusercontent.com/nordtheme/nord/1cef71605416a222e57225b544540ce0fcec18d4/license"
     }
   ],
   "既有工具引用": [
@@ -100573,5 +100781,57 @@
       "HTML": "材质与纹理/管理资料/素材预览.html",
       "检查记录": "材质与纹理/管理资料/素材检查记录.json"
     }
-  ]
+  ],
+  "配色套装清单": [
+    {
+      "名称": "Open Color",
+      "目录": "配色资源/Open_Color",
+      "作者": "Jeong Heeyeun / heeyeun",
+      "许可": "MIT",
+      "版本": "1.9.1",
+      "核心色数": 130,
+      "代码附加色数": 2,
+      "原件编号": [
+        "色001",
+        "色002",
+        "色003",
+        "色004"
+      ],
+      "来源提交": "3a716ee1f5ff5456db33cb8a6e964afdca1e7bc3",
+      "来源页面": "https://github.com/yeun/open-color",
+      "许可证文件": "配色资源/Open_Color/配色许可证.txt",
+      "说明文件": "配色资源/Open_Color/README.md",
+      "预览图": "配色资源/Open_Color/配色预览.png",
+      "原件数": 4,
+      "原件总字节数": 22906,
+      "原件集合SHA256": "4a49baf485fb898cf373f08905b596bef5da666e543ca604602ef1d45bbc2b30"
+    },
+    {
+      "名称": "Nord",
+      "目录": "配色资源/Nord",
+      "作者": "Sven Greb / Nord",
+      "许可": "MIT",
+      "版本": "0.2.1",
+      "核心色数": 16,
+      "代码附加色数": 0,
+      "原件编号": [
+        "色005",
+        "色006",
+        "色007"
+      ],
+      "来源提交": "1cef71605416a222e57225b544540ce0fcec18d4",
+      "来源页面": "https://github.com/nordtheme/nord",
+      "许可证文件": "配色资源/Nord/配色许可证.txt",
+      "说明文件": "配色资源/Nord/README.md",
+      "预览图": "配色资源/Nord/配色预览.png",
+      "原件数": 3,
+      "原件总字节数": 6354,
+      "原件集合SHA256": "750d91e823ad7f55accafd7faadbaf7ab6e9dc997927125ef03b9173504d67fa"
+    }
+  ],
+  "配色管理资料": {
+    "HTML": "配色资源/管理资料/配色预览.html",
+    "检查记录": "配色资源/管理资料/配色检查记录.json",
+    "总览PNG": "配色资源/全部配色预览.png"
+  }
 }
