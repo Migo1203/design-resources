@@ -50,6 +50,7 @@ def check():
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'配色资源').glob('*/原件/*') if p.is_file()}
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'配色资源/管理资料/源数据').glob('*') if p.is_file()}
     actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'网页模板与UI组件').glob('*/原件/**/*') if p.is_file()}
+    actual |= {str(p.relative_to(ROOT)) for p in (ROOT/'交互与动效资源').glob('*/原件/*') if p.is_file()}
     if actual != paths:
         raise ValueError('清单未覆盖实际原件：'+str(actual ^ paths))
     for item in data['既有工具引用']:
@@ -218,7 +219,35 @@ def check():
                 raise ValueError('网页验证存在横向溢出')
         if report['脚本或加载错误'] or report['外部网络请求数'] or report['HTTP错误']:
             raise ValueError('网页验证存在加载或外部请求错误')
-    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画、{len(image_packs)}套摄影／材质、{len(palettes)}套配色、{len(web_packs)}套网页资源及全部预览；未修改任何状态。')
+    motion_packs = data.get('动效套装清单', [])
+    if motion_packs:
+        for pack in motion_packs:
+            members = sorted([x for x in data['素材'] if x.get('套装')==pack['名称']],key=lambda x:x['文件'])
+            listing = '\n'.join(x['文件']+'\t'+x['SHA256'] for x in members)
+            if len(members)!=pack['原件数'] or set(x['编号'] for x in members)!=set(pack['原件编号']) or sum(x['文件字节数'] for x in members)!=pack['原件总字节数'] or hashlib.sha256(listing.encode()).hexdigest()!=pack['原件集合SHA256']:
+                raise ValueError('动效套装范围或原件集合不一致：'+pack['名称'])
+            for key in ['许可证文件','说明文件','桌面预览','手机预览']:
+                inside(pack[key])
+        meta = data['动效管理资料']
+        report = json.loads(inside(meta['检查记录']).read_text())
+        if hashlib.sha256(inside(meta['HTML']).read_bytes()).hexdigest()!=report['演示HTML_SHA256']:
+            raise ValueError('动效演示HTML与检查记录不一致')
+        expected = {p[k] for p in motion_packs for k in ['桌面预览','手机预览']} | {meta['总览PNG'],meta['减少动效PNG']}
+        if {x['文件'] for x in report['截图']}!=expected:
+            raise ValueError('动效截图未覆盖桌面、手机、总览与减少动效状态')
+        for shot in report['截图']:
+            if hashlib.sha256(inside(shot['文件']).read_bytes()).hexdigest()!=shot['SHA256']:
+                raise ValueError('动效PNG与检查记录不一致')
+            if shot['设备'] in ['桌面','手机'] and not shot['无横向溢出']:
+                raise ValueError('动效演示存在横向溢出')
+        normal = report['正常模式']; reduced = report['减少动效模式']
+        if not normal['初始无自动动画且静态内容可见'] or not normal['单次完成后全部内容可见'] or not normal['重置恢复完整静态内容']:
+            raise ValueError('动效内容可见性检查未通过')
+        for key in ['运行中切换系统偏好会取消时间线并恢复内容','CSS保留即时状态反馈且无动画','减少模式点击播放未新增引擎调用','页面开关不能覆盖系统减少偏好']:
+            if not reduced[key]: raise ValueError('减少动效检查未通过：'+key)
+        if report['脚本或加载错误'] or report['外部网络请求数'] or report['HTTP错误']:
+            raise ValueError('动效验证存在加载或外部请求错误')
+    print(f'通过：{len(seen)}项素材、{len(notices)}份许可证、{len(families)}个字体家族、{len(packs)}套图标、{len(mockups)}套样机、{len(illustrations)}套插画、{len(image_packs)}套摄影／材质、{len(palettes)}套配色、{len(web_packs)}套网页资源、{len(motion_packs)}套动效资源及全部预览；未修改任何状态。')
 
 if __name__ == '__main__':
     check()

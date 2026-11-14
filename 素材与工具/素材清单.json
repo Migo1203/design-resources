@@ -1,5 +1,5 @@
 {
-  "清单版本": 8,
+  "清单版本": 9,
   "更新日期": "2026-11-14",
   "说明": "仅为候选资源入库；未确认为Migo品牌资产。文件外部中文命名，二进制及SVG内容保持源版本原样。",
   "来源版本": {
@@ -100722,6 +100722,93 @@
       ],
       "验证记录": [],
       "预览文件": "网页模板与UI组件/Pico_CSS基础组件/桌面预览.png"
+    },
+    {
+      "编号": "动001",
+      "名称": "Open Props缓动变量",
+      "分类": "交互与动效资源",
+      "套装": "Open Props缓动变量",
+      "文件": "交互与动效资源/Open_Props缓动/原件/缓动变量.css",
+      "格式": "CSS",
+      "状态": "候选",
+      "作者或维护者": "Adam Argyle",
+      "原始文件名": "src/props.easing.css",
+      "来源页面": "https://github.com/argyleink/open-props",
+      "来源提交": "f39ab7c377a0e047f930982e3611bbc95254a260",
+      "来源版本": "1.7.23",
+      "下载链接": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/src/props.easing.css",
+      "下载日期": "2026-11-14",
+      "文件字节数": 6415,
+      "SHA256": "0767db9d3c7a630d21cd399cf9797357713a4b675e48c8281af62cddd8f01ee0",
+      "源GitBlobSHA1": "869926ae54ede52e609a8cc0936d6a1fa6c5f2d0",
+      "许可证": "MIT",
+      "许可证文件": "交互与动效资源/Open_Props缓动/源码许可证.txt",
+      "读取情况": "源Git blob及SHA256通过；本地CSS／JS读取、正常／reduce／键盘／触控模拟通过；已人工查看PNG，未做完整无障碍或真实设备认证",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用交互与动效探索"
+      ],
+      "验证记录": [],
+      "预览文件": "交互与动效资源/Open_Props缓动/桌面预览.png",
+      "处理说明": "原件未改，仅中文外部文件名；演示与减少动效策略由本库另行编写。"
+    },
+    {
+      "编号": "动002",
+      "名称": "Anime.js动画引擎",
+      "分类": "交互与动效资源",
+      "套装": "Anime.js动画引擎",
+      "文件": "交互与动效资源/Anime_JS/原件/动画引擎.umd.min.js",
+      "格式": "JS",
+      "状态": "候选",
+      "作者或维护者": "Julian Garnier",
+      "原始文件名": "dist/bundles/anime.umd.min.js",
+      "来源页面": "https://github.com/juliangarnier/anime",
+      "来源提交": "01b81be1df6843ccfe0a71c0699a746bf740dd77",
+      "来源版本": "4.5.0",
+      "下载链接": "https://raw.githubusercontent.com/juliangarnier/anime/01b81be1df6843ccfe0a71c0699a746bf740dd77/dist/bundles/anime.umd.min.js",
+      "下载日期": "2026-11-14",
+      "文件字节数": 118043,
+      "SHA256": "8d5b3a58a1f64023a04a4cedeef135a2263b18da04b35177ac13438a0bad033b",
+      "源GitBlobSHA1": "6c1a3ca65c60d1eb968a01470307de1c581d0490",
+      "许可证": "MIT",
+      "许可证文件": "交互与动效资源/Anime_JS/源码许可证.txt",
+      "读取情况": "源Git blob及SHA256通过；本地CSS／JS读取、正常／reduce／键盘／触控模拟通过；已人工查看PNG，未做完整无障碍或真实设备认证",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用交互与动效探索"
+      ],
+      "验证记录": [],
+      "预览文件": "交互与动效资源/Anime_JS/桌面预览.png",
+      "处理说明": "原件未改，仅中文外部文件名；演示与减少动效策略由本库另行编写。"
+    },
+    {
+      "编号": "动003",
+      "名称": "MicroModal对话框",
+      "分类": "交互与动效资源",
+      "套装": "MicroModal对话框",
+      "文件": "交互与动效资源/MicroModal对话框/原件/对话框.js",
+      "格式": "JS",
+      "状态": "候选",
+      "作者或维护者": "Indrashish Ghosh及贡献者",
+      "原始文件名": "src/index.js",
+      "来源页面": "https://github.com/micromodal/Micromodal",
+      "来源提交": "0a46e81fca52a332a70d1b7d399d8fce47504a04",
+      "来源版本": "固定源码快照：文件头v0.7.3，package.json为0.7.0",
+      "下载链接": "https://raw.githubusercontent.com/micromodal/Micromodal/0a46e81fca52a332a70d1b7d399d8fce47504a04/src/index.js",
+      "下载日期": "2026-11-14",
+      "文件字节数": 16898,
+      "SHA256": "1e22a7b917b5a668e666bd148d18004724bcb6d741e87ffb298b28a5d5d98b76",
+      "源GitBlobSHA1": "e37a2f77d4e36ccd3d39ac93ccb983b19cca0ac9",
+      "许可证": "MIT（源码LICENSE原文）",
+      "许可证文件": "交互与动效资源/MicroModal对话框/源码许可证.txt",
+      "读取情况": "源Git blob及SHA256通过；本地CSS／JS读取、正常／reduce／键盘／触控模拟通过；已人工查看PNG，未做完整无障碍或真实设备认证",
+      "项目采用情况": "未采用",
+      "适用项目": [
+        "通用交互与动效探索"
+      ],
+      "验证记录": [],
+      "预览文件": "交互与动效资源/MicroModal对话框/桌面预览.png",
+      "处理说明": "原件未改，仅中文外部文件名；演示与减少动效策略由本库另行编写。源码LICENSE.md明确MIT，package.json的license字段为ISC，两者不一致；本批归档源码并保留原始MIT声明，不冒称ISC原文或npm版本一致。"
     }
   ],
   "许可证原文": [
@@ -100813,6 +100900,24 @@
       "SHA256": "afaff063e044233f917b7807dccab022f09dca474f92b642846bee4850655bbf",
       "许可证": "MIT",
       "来源": "https://raw.githubusercontent.com/picocss/pico/a07563ddc856e6ed31a740e33b0397814227d469/LICENSE.md"
+    },
+    {
+      "文件": "交互与动效资源/Open_Props缓动/源码许可证.txt",
+      "SHA256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e",
+      "许可证": "MIT",
+      "来源": "https://raw.githubusercontent.com/argyleink/open-props/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE"
+    },
+    {
+      "文件": "交互与动效资源/Anime_JS/源码许可证.txt",
+      "SHA256": "3f3e835a9952cfc2a6ca836fb95b3257c981f24fa3ef51249055acb09931897b",
+      "许可证": "MIT",
+      "来源": "https://raw.githubusercontent.com/juliangarnier/anime/01b81be1df6843ccfe0a71c0699a746bf740dd77/LICENSE.md"
+    },
+    {
+      "文件": "交互与动效资源/MicroModal对话框/源码许可证.txt",
+      "SHA256": "dbea8f3f615dceaaf0bdc386990302144d56f8e49164ca0e11fb475804aae2f2",
+      "许可证": "MIT",
+      "来源": "https://raw.githubusercontent.com/micromodal/Micromodal/0a46e81fca52a332a70d1b7d399d8fce47504a04/LICENSE.md"
     }
   ],
   "既有工具引用": [
@@ -101305,5 +101410,73 @@
     "依赖锁文件": "网页模板与UI组件/管理资料/构建环境/package-lock.json",
     "组件验证页": "网页模板与UI组件/管理资料/组件验证页.astro",
     "Pico验证页": "网页模板与UI组件/管理资料/基础组件验证.html"
+  },
+  "动效套装清单": [
+    {
+      "名称": "Open Props缓动变量",
+      "目录": "交互与动效资源/Open_Props缓动",
+      "作者": "Adam Argyle",
+      "版本": "1.7.23",
+      "用途": "CSS缓动参数",
+      "标识": "css",
+      "来源页面": "https://github.com/argyleink/open-props",
+      "来源提交": "f39ab7c377a0e047f930982e3611bbc95254a260",
+      "原件编号": [
+        "动001"
+      ],
+      "原件数": 1,
+      "原件总字节数": 6415,
+      "原件集合SHA256": "618ad9ecfca2bc86da6307b3c11889020f4489dfe4d940883986f32166667a0d",
+      "许可证文件": "交互与动效资源/Open_Props缓动/源码许可证.txt",
+      "说明文件": "交互与动效资源/Open_Props缓动/README.md",
+      "桌面预览": "交互与动效资源/Open_Props缓动/桌面预览.png",
+      "手机预览": "交互与动效资源/Open_Props缓动/手机预览.png"
+    },
+    {
+      "名称": "Anime.js动画引擎",
+      "目录": "交互与动效资源/Anime_JS",
+      "作者": "Julian Garnier",
+      "版本": "4.5.0",
+      "用途": "JavaScript动画与时间线",
+      "标识": "anime",
+      "来源页面": "https://github.com/juliangarnier/anime",
+      "来源提交": "01b81be1df6843ccfe0a71c0699a746bf740dd77",
+      "原件编号": [
+        "动002"
+      ],
+      "原件数": 1,
+      "原件总字节数": 118043,
+      "原件集合SHA256": "2b33b9df83f1663867fdf9790baf2b2eafec3f07850c08c1918701e13b717b19",
+      "许可证文件": "交互与动效资源/Anime_JS/源码许可证.txt",
+      "说明文件": "交互与动效资源/Anime_JS/README.md",
+      "桌面预览": "交互与动效资源/Anime_JS/桌面预览.png",
+      "手机预览": "交互与动效资源/Anime_JS/手机预览.png"
+    },
+    {
+      "名称": "MicroModal对话框",
+      "目录": "交互与动效资源/MicroModal对话框",
+      "作者": "Indrashish Ghosh及贡献者",
+      "版本": "固定源码快照：文件头v0.7.3，package.json为0.7.0",
+      "用途": "对话框与键盘焦点",
+      "标识": "modal",
+      "来源页面": "https://github.com/micromodal/Micromodal",
+      "来源提交": "0a46e81fca52a332a70d1b7d399d8fce47504a04",
+      "原件编号": [
+        "动003"
+      ],
+      "原件数": 1,
+      "原件总字节数": 16898,
+      "原件集合SHA256": "79a411e748c61addc5a53c5b79d5b0dd5f80b0b27bcf965605761253b5bcd746",
+      "许可证文件": "交互与动效资源/MicroModal对话框/源码许可证.txt",
+      "说明文件": "交互与动效资源/MicroModal对话框/README.md",
+      "桌面预览": "交互与动效资源/MicroModal对话框/桌面预览.png",
+      "手机预览": "交互与动效资源/MicroModal对话框/手机预览.png"
+    }
+  ],
+  "动效管理资料": {
+    "HTML": "交互与动效资源/管理资料/交互演示.html",
+    "检查记录": "交互与动效资源/管理资料/动效检查记录.json",
+    "总览PNG": "交互与动效资源/全部资源预览.png",
+    "减少动效PNG": "交互与动效资源/减少动效预览.png"
   }
 }
